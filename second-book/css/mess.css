@@ -1,0 +1,238 @@
+*{
+	margin:0;
+	padding:0;
+	list-style: none;
+}
+a{
+    text-decoration:none;
+}
+
+
+/*最顶部*/
+div.head{
+	width:100%;
+	height:30px;
+	background:#FAFAFA;
+}
+.head .content{
+	width:1200px;
+	height:100%;
+	margin:0 auto;
+}
+.head .content a{
+	float:left;
+	line-height:30px;
+	font-size:12px;
+	color:#666;
+	margin-left:20px;
+	margin-right:20px;
+}
+.head .content a:nth-child(2)~a{
+	float:right;
+}
+.head .content a:nth-child(3){
+	margin-right:100px;	
+}
+.head .content a:hover{
+	color:#FF6600;
+}
+
+
+/*导航*/
+div.nav{
+	width:1200px;
+	height:100px;
+	margin:10px auto;
+	
+}
+.nav .logo{
+	width:10%;
+	float:left;
+	height:100%;
+}
+.nav .logo img{
+	height:90%;
+	float:left;
+	margin-top:5px;
+	margin-left:10px;
+}
+.nav .text{
+	width:15%;
+	height:100%;
+	float:left;
+}
+.nav .text p{
+	width:100%;
+	height:50%;
+	margin:0 auto;
+	font-size:18px;
+	line-height:50px;
+	text-align:center;	
+}
+.nav .text p:nth-child(2){
+	font-size:20px;	
+	line-height:20px;
+}
+.nav .index{
+	width:60%;
+	height:40px;
+	float:right;
+	margin-top:40px;
+	display:flex;
+	justify-content: space-around;
+	background:#f3f3f3;
+}
+.nav .index div{
+	width:25%;
+	
+}
+.nav .index div a{
+	float:left;
+	width:100%;
+	height:100%;
+	font-size:15px;
+	text-align:center;
+	color:#666;
+	line-height:40px;
+}
+.nav .index div a.active{
+	background:rgba(0,0,0,0.5);
+	color:#fff;
+}
+
+
+
+/*信息*/
+div.mess{
+	width:1200px;
+	height:500px;
+	margin:20px auto;
+}
+.mess div.left{
+	float:left;
+	width:300px;
+	height:100%;
+}
+.mess div.left img{
+	margin-left:24px;
+}
+.mess div.left p{
+	margin-left:24px;
+	width:252px;
+	height:90px;
+	background:#f3f3f3;
+	border-radius:20px;
+	margin-top:25px;
+	margin-bottom:25px;
+	text-align:center;
+	line-height:90px;
+	font-size:20px;
+	color:#666;
+	cursor:pointer;
+}
+.mess div.left p.active{
+	color:#ff6700;
+	background:rgba(0,0,0,0.2);
+}
+
+.mess div.right{
+	float:left;
+	width:900px;
+	height:100%;
+	padding-left:150px;
+	box-sizing:border-box;
+}
+.mess div.right >div{
+	display:none;
+}
+.mess div.right >div.active{
+	display:block;
+}
+	
+	
+	
+div.book input{
+	width:80%;
+	height:40px;
+	/*display:block;*/
+	margin:0 auto;
+	margin-bottom:20px;
+	color:#a9a9a9;
+}
+div.book input:first-of-type{
+	margin-top:20px;
+}
+div.book textarea{
+	width:80%;
+	height:100px;
+	/*display:block;*/
+	margin:0 auto;
+	margin-bottom:20px;
+	resize:vertical;
+}
+div.book button{
+	width:50px;
+	height:30px;
+	margin-right:15px;
+}
+div.book button.enter{
+	margin-left:500px;
+}
+
+
+/*留言信息*/
+div.leavems input{
+	width:80%;
+	height:40px;
+	/*display:block;*/
+	margin:0 auto;
+	margin-bottom:20px;
+	color:#a9a9a9;
+}
+div.leavems input:first-of-type{
+	margin-top:20px;
+}
+div.leavems textarea{
+	width:80%;
+	height:170px;
+	/*display:block;*/
+	margin:0 auto;
+	margin-bottom:20px;
+	resize:vertical;
+}
+div.leavems button{
+	width:50px;
+	height:30px;
+	margin-right:15px;
+}
+div.leavems button.enter{
+	margin-left:500px;
+}
+
+
+
+/*底部*/
+div.foot{
+	width:100%;
+	height:100px;	
+	margin-top:40px;
+	background:#f0f0f0;
+}
+.foot p{
+	width:100%;
+	text-align:center;
+	margin:0 auto;
+	color:#666;	
+}
+.foot p:nth-child(1){
+	padding-top:10px;
+	font-size:14px;
+	padding-bottom:10px;
+}
+.foot p:nth-child(2){
+	font-size:12px;
+}
+.foot p:nth-child(3){
+	padding-top:10px;
+	font-size:10px;
+}

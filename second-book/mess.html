@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>发布信息</title>
+		
+		<link rel="stylesheet" href="css/mess.css" />
+
+	</head>
+	<body>
+		<!--最顶部-->
+		<div class="head">
+			<div class="content">
+				<a href="login.html" class='login'>登录</a>
+				<a href="regs.html" class='sign'>注册</a>
+				<a href="center.html" class='shopcar'>个人中心</a>
+				<a href="order.html" class='order'>我的订单</a>
+				<a href="shopcar.html" class='person'>购物车</a>
+			</div>
+		</div>
+		<!--导航条-->
+		<div class="nav">
+			<div class="logo">
+				<img src="image/logo.jpg" alt="" />
+			</div>
+			<div class="text">
+				<p>山西中医学院</p>
+				<p>二手书交易平台</p>
+			</div>
+			<div class="index">
+				<div>
+					<a href="index.html">首页</a>
+				</div>
+				<div>
+					<a href="textbook.html">教材专区</a>
+				</div>
+				<div>
+					<a href="book.html">课外读物</a>
+				</div>
+				<div>
+					<a href="mess.html" class='active'>发布信息</a>
+				</div>
+				<div>
+					<a href="aboutus.html">关于我们</a>
+				</div>
+			</div>
+		</div>
+	
+		<!--信息-->
+		<div class="mess">
+			<div class="left">
+				<img src="image/sline_03.png" alt="" />
+				<div class="mchose">
+					<p class='active'>二手书信息</p>
+					<p>留言信息</p>
+				</div>
+				<img src="image/sline_06.png" alt="" />
+			</div>
+			<div class="right">
+				<!--二手书信息-->
+				<div class="book active">
+					<form action="" class='book'>
+						<input type="text" value='账号'/>
+						<input type="text" value='信息标题'/>
+						<textarea name="" id="" cols="30" rows="10" placeholder='信息内容'></textarea>
+						<input type="text" name="xiala" list="sel" placeholder='所属分类'/>
+						<datalist id="sel">
+							<option value="公共课程"></option>
+							<option value="中医临床"></option>
+							<option value="针灸推拿"></option>
+							<option value="中西结合"></option>
+							<option value="中药学院"></option>
+							<option value="护理学院"></option>
+							<option value="医药管理"></option>
+							<option value="人文学院"></option>
+						</datalist>
+						<input type="text" value='邮箱地址'/>
+						<input type="text" value='联系电话'/>
+					</form>
+					<button class='enter'>发布</button>
+					<button class='cancel'>取消</button>
+				</div>
+				<!--留言信息-->
+				<div class="leavems">
+					<form action="">
+						<input type="text" value='账号'/>
+						<input type="text" value='姓名'/>
+						<input type="text" value='联系电话'/>
+						<input type="text" value='留言标题'/>
+						<textarea name="" id="" cols="30" rows="10" placeholder='留言内容'></textarea>
+					</form>
+					<button class='enter'>发布</button>
+					<button class='cancel'>取消</button>
+				</div>
+			</div>
+		</div>
+
+		<!--底部-->
+		<div class="foot">
+			<p>山西中医学院二手书交易平台</p>
+			<p>地址：山西省晋中市榆次区山西省高校新区大学街121号</p>
+			<p>Copyright&copy;  版权所有 违法必究</p>
+		</div>
+		
+		<script src="js/mess.js"></script>
+	</body>
+</html>
+

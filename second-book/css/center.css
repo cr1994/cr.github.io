@@ -1,0 +1,63 @@
+*{
+	margin:0;
+	padding:0;
+	list-style: none;
+}
+a{
+    text-decoration:none;
+}
+
+body{
+	background-image:url(../image/bg1.jpg);
+	background-size:cover;
+}
+
+/*返回*/
+div.return{
+	width:1000px;
+	height:30px;
+	margin:0 auto;
+	margin-top:20px;
+}
+.return a{
+	float:left;
+	color:#333;
+}
+
+/*个人中心*/
+div.center{
+	width:600px;
+	height:550px;
+	margin:10px auto;
+	background:rgba(255,255,255,0.6);
+	padding-left:100px;
+	box-sizing:border-box;
+}
+.center > p{
+	padding-top:15px;
+	padding-bottom:20px;
+	font-size:22px;
+}
+.center > input{
+	width:40%;
+	height:40px;
+	margin-bottom:20px;
+	color:#333;
+}
+.center > select{
+	width:40%;
+	height:40px;
+	margin-bottom:20px;
+	color:#333;
+}
+.center > input.sex{
+	width:20px;
+	height:20px;
+	margin-left:10px;
+	margin-right:20px;
+}
+.center button{
+	width:80px;
+	height:40px;
+	margin-right:20px;
+}

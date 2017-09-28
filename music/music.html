@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>音乐播放器</title>
+		<link rel="stylesheet" href="css/music11.css" />
+		<script src="js/music.js"></script>
+		<link rel="stylesheet" type="text/css" href="font/iconfont.css">
+	</head>
+	<body>
+		<div class="box">
+			
+			<audio src="music/莫文蔚 - 阴天.mp3"></audio>
+			<!--列表区-->
+			<div id="list">
+				<h2>播放列表</h2>
+				<ul class="title">
+					<li>&nbsp;</li>
+					<li>歌名</li>
+					<li>作者</li>
+					<li>专辑名</li>
+					<li>功能</li>
+				</ul>
+				<ul class="list">
+					<!--<li class="active">
+						<span class="iconfont icon-yinle"></span>
+						<span>阴天</span>
+						<span>莫文蔚</span>
+						<span>莫文蔚精选</span>
+						<span class="iconfont icon-shanchu"></span>
+					</li>-->
+				</ul>
+				<canvas id="canvas" width="1000px" height="200px"></canvas>
+			</div>
+			<div id="lyric" class="lyric">
+				<ul style='top:0'></ul>
+			</div>
+			
+			
+			
+			<div class="button">
+				<!--功能区（三个按钮）-->
+				<ul class="function">
+					<li class="pre">
+						<span class="iconfont icon-arrow-ll"></span>
+					</li>
+					<li class="play">
+						<span class="iconfont icon-bofang1"></span>
+					</li>
+					<li class="next">
+						<span class="iconfont icon-shangyishou"></span>
+					</li>
+				</ul>
+				<!--小图标-->
+				<div class="sicon">
+					<div class="icon">
+					</div>
+				</div>
+				<!--进程-->
+				<div class="progress">
+					<div class="author">
+						<span>阴天</span>
+						<span>----</span>
+						<span>莫文蔚</span>
+					</div>
+					<div class="jindu">
+						<div class="tiao">
+							<div class="tiaom">
+								<div class="moren"></div>
+								<div class="load"></div>
+								<div class="played"></div>
+								<div class="circle"></div>
+							</div>
+						</div>
+						<div class="time">
+							<span>00:00</span>
+							<span>/</span>
+							<span>00:00</span>
+						</div>
+					</div>
+				</div>
+				<!--音量-->	
+				<div class="voice">
+					<div class="vicon">
+						<span class="iconfont icon-yinliang"></span>
+					</div>
+					<div class="vtiao">
+						<div class="moren"></div>
+						<div class="load"></div>
+						<div class="played"></div>
+						<div class="circle"></div>
+					</div>
+					
+				</div>
+				<!--菜单-->
+				<div class="menu">
+					<span class="iconfont icon-icon68"></span>
+				</div>
+				
+			</div>
+		</div>
+	</body>
+</html>
+<script src="js/main.js"></script>

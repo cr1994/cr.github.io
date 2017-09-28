@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/musicjj.css" />
+		<!--<script src="js/music.js"></script>-->
+		<link rel="stylesheet" type="text/css" href="font/iconfont.css">
+
+		
+		
+
+	</head>
+	<body>
+		<div class="box">
+			
+			<audio src="music/莫文蔚 - 阴天.mp3"></audio>
+			<!--列表区-->
+			<div id="list">
+				<h2>播放列表</h2>
+				<ul class="title">
+					<li>播放状态</li>
+					<li>歌名</li>
+					<li>作者</li>
+					<li>专辑名</li>
+					<li>功能</li>
+				</ul>
+				<ul class="list">
+					<!--<li class="active">
+						<span class="iconfont icon-yinle"></span>
+						<span>阴天</span>
+						<span>莫文蔚</span>
+						<span>莫文蔚精选</span>
+						<span class="iconfont icon-shanchu"></span>
+					</li>-->
+				</ul>
+				<canvas id="canvas" width="1000px" height="200px"></canvas>
+			</div>
+			<!-- <div id="lyric" class="lyric">
+				<ul style='top:0'></ul>
+			</div> -->
+			
+			
+			
+			<div class="button">
+				<!--功能区（三个按钮）-->
+				<ul class="function">
+					<li class="pre">
+						<span class="iconfont icon-arrow-ll"></span>
+					</li>
+					<li class="play">
+						<span class="iconfont icon-bofang1"></span>
+					</li>
+					<li class="next">
+						<span class="iconfont icon-shangyishou"></span>
+					</li>
+				</ul>
+				<!--小图标-->
+				<div class="sicon">
+					<div class="icon">
+					</div>
+				</div>
+				<!--进程-->
+				<div class="progress">
+					<div class="author">
+						<span>阴天</span>
+						<span>----</span>
+						<span>莫文蔚</span>
+					</div>
+					<div class="jindu">
+						<div class="tiao">
+							<div class="tiaom">
+								<div class="moren"></div>
+								<div class="load"></div>
+								<div class="played"></div>
+								<div class="circle"></div>
+							</div>
+						</div>
+						<div class="time">
+							<span>00:00</span>
+							<span>/</span>
+							<span>00:00</span>
+						</div>
+					</div>
+				</div>
+				<!--音量-->	
+				<div class="voice">
+					<div class="vicon">
+						<span class="iconfont icon-yinliang"></span>
+					</div>
+					<div class="vtiao">
+						<div class="moren"></div>
+						<div class="load"></div>
+						<div class="played"></div>
+						<div class="circle"></div>
+					</div>
+					
+				</div>
+				<!--菜单-->
+				<div class="menu">
+					<span class="iconfont icon-icon68"></span>
+				</div>
+				
+			</div>
+		</div>
+	</body>
+</html>
+<script src="js/main.js"></script>
+<script src='jquery.js'></script>
+<script>
+	"use strict";
+	
+
+	
+	//1.添加列表
+	//获取元素ul
+	let ullist=$("ul.list").get(0);
+	//用数组的形式将歌曲的相关信息存储起来
+	let songlist=[
+		{id:'song1',name:'阴天',src:'music/莫文蔚 - 阴天.mp3',icon:'image/s6.jpg',bigimg:'image/s6.jpg',author:'莫文蔚',zjm:'莫文蔚精选'},
+		
+		{id:'song2',name:'似水年华',src:'music/刘若英 - 似水年华.mp3',icon:'image/s3.jpg',bigimg:'image/2.jpg',author:'刘若英',zjm:'后来'},
+		
+		{id:'song3',name:'听说',src:'music/刘若英 - 听说.mp3',icon:'image/s5.jpg',bigimg:'image/s5.jpg',author:'刘若英',zjm:'后来'},
+		
+		{id:'song4',name:'空白格',src:'music/蔡健雅 - 空白格.mp3',icon:'image/s2.jpg',bigimg:'image/1.jpeg',author:'蔡健雅',zjm:'空白格专辑'},
+		
+		{id:'song5',name:'生如夏花',src:'music/朴树 - 生如夏花.mp3',icon:'image/s7.jpg',bigimg:'image/s7.jpg',author:'朴树',zjm:'生如夏花'}
+	]
+	//通过循环给播放列表添加li
+	for(let i=0;i<songlist.length;i++){
+		let li=$("<li>").get(0);
+		li.innerHTML=`<span class="iconfont"></span>
+						<span>${songlist[i].name}</span>
+						<span>${songlist[i].author}</span>
+						<span>${songlist[i].zjm}</span>
+						<span class="iconfont icon-shanchu" id="del"></span>`;
+						//将数组的对象中保存的属性赋值给li的内容
+		li.id=songlist[i].id;//给每个新创建的Li添加id名，用来唯一标识这首歌
+		if(i==0){
+			li.classList.add('active');
+		}
+		ullist.append(li);
+	}
+	
+	//获取audio和加载的进度条
+	let audio1=$("audio").get(0);
+	let sload=$("div.load").get(0);
+	//进度条加载完时才可以播放
+	audio1.oncanplay=function(){
+		sload.style.width='100%';
+	}
+	
+	
+	
+	//添加菜单的点击事件
+	let menu=$("div.menu > span").get(0);
+	menu.onclick=function(){
+		$("div#list").toggleClass("list");
+		// $("div#lyric").toggleClass("lyric");
+	}
+	
+	
+	//定义一个全局变量，用于存储当前播放的是第几首
+	let current=0;
+	
+	//2.从播放入手
+	//获取播放键
+	let playkey=$("ul.function > li.play > span").get(0);
+	
+	//判断点击播放键时如果处于暂停状态，则播放，如果是播放状态，则暂停
+	playkey.onclick=function(){
+		if(audio1.paused){
+			audio1.play();
+			playkey.classList.remove("icon-bofang1");
+			playkey.classList.add("icon-bofang");
+			ullist.children[current].children[0].classList.add('icon-yinle');
+		}else{
+			audio1.pause();
+			playkey.classList.remove("icon-bofang");
+			playkey.classList.add("icon-bofang1");
+			ullist.children[current].children[0].classList.remove('icon-yinle')
+		}
+	}
+	
+	
+	let tiaom=$("div.tiaom").get(0);
+	
+	//3.对时间进行格式化处理
+	function getTime(time){
+		let m=parseInt(time/60)>=10?parseInt(time/60):'0'+parseInt(time/60);
+		let s=parseInt(time)%60>=10?parseInt(time)%60:'0'+parseInt(time)%60;
+		return m+':'+s;
+	}
+	
+	
+	let scircle,splayed;
+	//当前的播放位置发生改变时触发该事件
+	audio1.ontimeupdate=function(){
+		//对获取到的时间进行处理
+		let nowtime=getTime(audio1.currentTime);
+		let alltime=getTime(audio1.duration);
+		//将时间赋值给进度条下面的对应的span
+		$("div.time > span").get(0).innerHTML=`${nowtime}`;
+		$("div.time > span").get(2).innerHTML=`${alltime}`;
+		
+				
+		//获取到圆点和已播放的进度条
+		scircle=$("div.circle").get(0);
+		splayed=$("div.played").get(0);
+		
+		//改变圆点的位置和已播放的进度条的位置
+		scircle.style.left=audio1.currentTime/audio1.duration*tiaom.offsetWidth-5+'px';
+		splayed.style.width=audio1.currentTime/audio1.duration*tiaom.offsetWidth+'px';
+		
+		
+		
+		
+	}
+	
+	
+	//4.给播放时歌的进度条添加点击事件(谷歌有问题)
+	audio1.oncanplaythrough=function(){
+		tiaom.onclick=function(e){
+			audio1.currentTime=e.offsetX/tiaom.offsetWidth*audio1.duration;
+		}
+	}
+	
+ 	//5.点击音量按钮
+	let vicon=$("div.vicon > span").get(0);
+
+	//定义一个变量，用于保存当前音量
+	let nowval=1;//
+	vicon.onclick=function(){
+		if(audio1.volume){
+			nowval=audio1.volume;
+			audio1.volume=0;
+			this.classList.remove('icon-yinliang');
+			this.classList.add('icon-jingyin');
+		}else{
+			audio1.volume=nowval;
+			this.classList.remove('icon-jingyin');
+			this.classList.add('icon-yinliang');
+		}
+	}
+	
+	//6.音量改变时的操作
+	//获取音量条
+	let vplayed=$("div.played").get(1);
+	let vcircle=$("div.circle").get(1);
+	let vtiao=$("div.vtiao").get(0);
+	
+	//音量改变时触发该事件，由audio调用
+	audio1.onvolumechange=function(){
+		vcircle.style.left=audio1.volume/1*vtiao.offsetWidth-10+'px';
+		vplayed.style.width=audio1.volume/1*vtiao.offsetWidth+'px';
+	}
+	
+	//7.音量点击
+	vtiao.onclick=function(e){
+		audio1.volume=e.offsetX/vtiao.offsetWidth*1;
+	}
+	
+	
+	
+	let sicon=$("div.sicon >div.icon").get(0);
+	
+	//8.列表的双击事件
+	$('ul.list').click(function(e){
+		let tg=e.target;
+		let num;
+		if(tg.nodeName=='SPAN'&&tg.id!='del'){//判断点击的是否为span标签
+			//获取父元素的id值，与数据库中进行比较得到索引值
+			num=songlist.findIndex(function(value){
+					return value.id==tg.parentNode.id;
+			})
+			
+			current=num;
+			if(current>songlist.length-1){
+				current=0;
+			}
+			if(current<0){
+				current=songlist.length-1;
+			}
+			
+			current=num;
+			
+			//换背景图
+			document.body.style.backgroundImage=`url(${songlist[num].bigimg})`;
+			//换小图
+			sicon.style.backgroundImage=`url(${songlist[num].icon})`;
+			//换歌的地址
+			audio1.src=`${songlist[num].src}`;
+			//换作者的名字和歌名
+			$("div.author > span").get(0).innerHTML=`${songlist[num].name}`;
+			$("div.author > span").get(2).innerHTML=`${songlist[num].author}`;
+			audio1.play();//有问题。会闪一下nan才会播放（如何处理nan的问题）
+	
+	
+			[...tg.parentNode.parentNode.children].forEach(function(value){
+				value.classList.remove('active');
+				value.children[0].classList.remove('icon-yinle')
+			})
+			tg.parentNode.children[0].classList.add('icon-yinle');
+			tg.parentNode.classList.add('active');
+			
+			playkey.classList.remove("icon-bofang1");
+			playkey.classList.add("icon-bofang");
+		
+		
+		}else if(tg.id=='del'){//删除功能
+			
+			
+			num=songlist.findIndex(function(value){
+				return value.id==tg.parentNode.id;
+			})
+			if(num==current){//不删除当前播放的这行
+				return;
+			}
+			ullist.removeChild(tg.parentNode);
+			songlist.splice(num,1);
+			if(num<current){//更新current
+				current--;
+			}
+		}
+		
+	})
+	
+ 	//9.上一首
+	let pre=$("li.pre").get(0);
+	pre.onclick=function(){
+		current=current-1;
+		if(current<0){
+			current=songlist.length-1;
+		}
+		//换背景图
+		document.body.style.backgroundImage=`url(${songlist[current].bigimg})`;
+		//换小图
+		sicon.style.backgroundImage=`url(${songlist[current].icon})`;
+		//换歌的地址
+		audio1.src=`${songlist[current].src}`;
+		//换作者的名字和歌名
+		$("div.author > span").get(0).innerHTML=`${songlist[current].name}`;
+		$("div.author > span").get(2).innerHTML=`${songlist[current].author}`;
+		audio1.play();//有问题。会闪一下nan才会播放（如何处理nan的问题）
+		
+
+		[...ullist.children].forEach(function(value){
+			value.classList.remove('active');
+			value.children[0].classList.remove('icon-yinle')
+		})
+
+		ullist.children[current].children[0].classList.add('icon-yinle');
+		ullist.children[current].classList.add('active');
+		
+		playkey.classList.remove("icon-bofang1");
+		playkey.classList.add("icon-bofang");
+		
+		
+		}
+	
+	//10.下一首
+	let next=$("li.next").get(0);
+	next.onclick=function(){
+		current=current+1;
+		if(current>songlist.length-1){
+			current=0;
+		}
+		//换背景图
+		document.body.style.backgroundImage=`url(${songlist[current].bigimg})`;
+		//换小图
+		sicon.style.backgroundImage=`url(${songlist[current].icon})`;
+		//换歌的地址
+		audio1.src=`${songlist[current].src}`;
+		//换作者的名字和歌名
+		$("div.author > span").get(0).innerHTML=`${songlist[current].name}`;
+		$("div.author > span").get(2).innerHTML=`${songlist[current].author}`;
+		audio1.play();//有问题。会闪一下nan才会播放（如何处理nan的问题）
+		
+
+		[...ullist.children].forEach(function(value){
+			value.classList.remove('active');
+			value.children[0].classList.remove('icon-yinle')
+		})
+
+		ullist.children[current].children[0].classList.add('icon-yinle');
+		ullist.children[current].classList.add('active');
+		
+		playkey.classList.remove("icon-bofang1");
+		playkey.classList.add("icon-bofang");
+		
+		
+		}
+		
+		
+		
+	//11.一首歌放完直接放下一首
+	audio1.onended=function(){
+		//next.onclick();
+		current=current+1;
+		if(current>songlist.length-1){
+			current=0;
+		}
+		//换背景图
+		document.body.style.backgroundImage=`url(${songlist[current].bigimg})`;
+		//换小图
+		sicon.style.backgroundImage=`url(${songlist[current].icon})`;
+		//换歌的地址
+		audio1.src=`${songlist[current].src}`;
+		//换作者的名字和歌名
+		$("div.author > span").get(0).innerHTML=`${songlist[current].name}`;
+		$("div.author > span").get(2).innerHTML=`${songlist[current].author}`;
+		audio1.play();//有问题。会闪一下nan才会播放（如何处理nan的问题）
+		
+
+		[...ullist.children].forEach(function(value){
+			value.classList.remove('active');
+			value.children[0].classList.remove('icon-yinle')
+		})
+
+		ullist.children[current].children[0].classList.add('icon-yinle');
+		ullist.children[current].classList.add('active');
+		
+		playkey.classList.remove("icon-bofang1");
+		playkey.classList.add("icon-bofang");
+	}
+
+
+</script>

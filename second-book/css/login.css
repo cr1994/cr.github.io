@@ -1,0 +1,65 @@
+*{
+	margin:0;
+	padding:0;
+	list-style: none;
+}
+a{
+    text-decoration:none;
+}
+
+body{
+	background-image:url(../image/bg1.jpg);
+	background-size:cover;
+}
+
+/*返回*/
+div.return{
+	width:800px;
+	height:30px;
+	margin:0 auto;
+	margin-top:80px;
+}
+.return a{
+	float:left;
+	color:#333;
+}
+
+/*表格*/
+div.box{
+	width:450px;
+	height:300px;
+	margin:0 auto;
+	margin-top:40px;
+	background:rgba(255,255,255,0.6);
+	padding-left:100px;
+	box-sizing:border-box;
+	/*margin:100px auto 0;*/
+}
+.box button{
+	width:50px;
+	height:30px;
+	margin-top:20px;
+	margin-left:80px;
+}
+.box{
+	margin-left:100px;
+	margin-right:150px;
+}
+.box input{
+	width:60%;
+	height:40px;
+	margin:30px auto 10px;
+}
+
+.box >p{
+	width:100%;
+	font-size:20px;
+	height:30px;
+	line-height:30px;
+	padding-top:15px;
+	box-sizing:border-box;
+}
+.box form p{
+	font-size:12px;
+	color:#333;
+}

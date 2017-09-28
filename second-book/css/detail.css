@@ -1,0 +1,69 @@
+*{
+	margin:0;
+	padding:0;
+	list-style: none;
+}
+a{
+    text-decoration:none;
+}
+body{
+	background-image:url(../image/bg1.jpg);
+	background-size:cover;
+}
+
+
+div.return{
+	width:1000px;
+	height:50px;
+	margin:50px auto 20px;
+}
+div.return p{
+	width:70px;
+	height:35px;
+	text-align:center;
+	line-height:35px;
+	border:1px solid #eee;
+	cursor:pointer;
+	color:#fff;
+	background:rgba(0,0,0,0.3);
+}
+
+div.box{
+	width:1000px;
+	height:400px;
+	margin:0 auto;
+	border:1px solid #eee;
+	background:rgba(255,255,255,0.6);
+	position:relative;
+}
+div.box div.pic{
+	width:300px;
+	height:100%;
+	float:left;
+	overflow:hidden;
+	position:relative;
+}
+div.box div.pic img{
+	width:200px;
+	height:200px;
+	margin-top:50px;
+	margin-left:50px;
+}
+div.box div.mess{
+	width:700px;
+	height:100%;
+}
+div.box div.mess p{
+	text-indent:40px;
+	line-height:40px;
+}
+div.box div.mess p:first-child{
+	padding-top:50px;
+}
+div.box button{
+	width:100px;
+	height:50px;
+	position:absolute;
+	bottom:50px;
+	right:200px;
+}

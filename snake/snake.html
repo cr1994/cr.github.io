@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="snake.js"></script>
+		<!--<script src="snakeclass.js"></script>-->
+	</head>
+	<style>
+		*{
+			margin:0;
+			padding:0;
+		}
+		body{
+			width:100%;
+			height:100%;
+			
+			/*background-size:cover;
+			background-repeat:no-repeat;
+			background-position:center; */
+		}
+		
+		div.box{
+			width:600px;
+			height:600px;
+			background-image:url(gg_01.png);
+			background-size:100%;
+			margin:15px auto;
+			/*border:1px solid green;*/
+		}
+		div.box >div{
+			width:30px;
+			height:30px;
+			float:left;
+			
+			
+			box-sizing:border-box;
+			/*border:1px solid #BDE8B2;*/
+		}
+		div.box >div.she{
+			background:#FF3300;
+			border:1px solid black;
+			border-radius:8px;
+			box-shadow:0 0 0px 2px #fff inset;
+		}
+		
+		div.box >div.food{
+			background-image:url(star_03.png);
+			background-size:cover;
+			background-position:center;
+		}
+	
+		button{
+			position:absolute;
+			top:50%;
+			margin-top:-40px;
+			left:120px;
+			width:100px;
+			height:60px;
+			border-radius:10px;
+			background:#E4F2FD;
+			
+		}
+		div.score{
+			position:absolute;
+			top:50%;
+			margin-top:-50px;
+			right:120px;
+			width:100px;
+			height:100px;
+			border-radius:15px;
+			font-size:40px;
+			color:#fff;
+			background:rgba(0,0,0,0.4);
+			text-align:center;
+			line-height:100px;
+		}
+	</style>
+	<body>
+		<div class="box"></div>
+		<!--<button>START GAME</button>-->
+		<button>ONCE AGAIN</button>
+		<div class="score">0</div>
+	</body>
+</html>

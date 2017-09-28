@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>教材详情页</title>
+		
+		<link rel="stylesheet" href="css/tbdetail.css" />
+	</head>
+	<body>
+		<div class="return">
+			<p>返回</p>
+		</div>
+		<div class="box">
+			<div class="pic">
+				<img src="image/f11.jpg" alt="" />
+			</div>
+			<div class="mess">
+				<p>书名：思想道德修养与法律基础</p>
+				<p>版本：2015年修订版</p>
+				<p>出版社：高等教育出版社</p>	
+				<p>新旧程度：八成新</p>
+				<p>价格：￥12.00</p>
+				<p>发布者：陈蓉</p>
+				<p>联系方式：18435165573</p>
+			</div>
+			<button>加入购物车</button>
+		</div>
+		
+		<script>
+			let ret=document.querySelector('div.return p');
+			ret.onclick=function(){
+				history.go(-1);
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,105 @@
+*{
+	margin:0;
+	padding:0;
+	list-style: none;
+}
+a{
+    text-decoration:none;
+}
+
+
+div.title{
+	width:1200px;
+	height:50px;
+	padding-top:20px;
+	margin:0 auto;
+}
+.title p{
+	width:90%;
+	height:100%;
+	font-size:20px;
+	float:left;
+}
+.title button{
+	width:5%;
+	float:right;
+	height:30px;
+}
+
+div.list{
+	width:1200px;
+	height:auto;
+	overflow:hidden;
+	margin:0 auto;
+}
+.list ul{
+	width:100%;
+	height:auto;
+}
+.list ul li{
+	width:1200px;
+	height:192px;
+	border:1px solid #eee;
+	box-sizing:border-box;
+	margin-bottom:15px;
+}
+.list ul li:first-child{
+	height:42px;
+	background:#f1f1f1;
+	display:flex;
+	justify-content: space-around;
+}
+.list ul li:first-child p{
+	text-align:center;
+	line-height:42px;
+	width:20%;
+	height:100%;
+}
+.list ul li div.top{
+	width:100%;
+	height:42px;
+	background:#f1f1f1;
+}
+.list ul li div.top p{
+	width:15%;
+	height:100%;
+	float:left;
+	text-align:center;
+	line-height:42px;
+	font-size:14px;
+}
+.list ul li div.top div.del{
+	float:right;
+	width:10%;
+	height:100%;
+	line-height:42px;
+	text-align:center;
+	font-size:14px;
+	cursor:pointer;
+}
+
+.list ul li div.bottom{
+	width:100%;
+	height:150px;
+	display:flex;
+}
+.list ul li div.bottom div.book{
+	width:20%;
+	height:100%;
+	padding-top:15px;
+	box-sizing:border-box;
+}
+.list ul li div.bottom div.book img{ 
+	height:80%;
+	float:left;
+}
+.list ul li div.bottom div.book p{ 
+	height:80%;
+}
+.list ul li div.bottom div.bton{
+	width:20%;
+	height:100%;
+	text-align:center;
+	line-height:150px;
+	float:left;
+}

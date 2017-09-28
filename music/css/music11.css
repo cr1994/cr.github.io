@@ -1,0 +1,340 @@
+*{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+html,body{
+	width:100%;
+	height:100%;
+	overflow:hidden;
+	
+}
+body{
+	background-color: rgba(0,0,0,.35);
+	background-image:url(../image/img/yintian.jpg);
+	background-size:cover;
+}
+
+
+
+div.box{
+	width:80%;
+	height:90%;
+	margin:20px auto;
+	position:relative;
+}
+
+
+div.box > div.list canvas{
+	position:absolute;
+	bottom:0px;
+	left:120px;
+}
+
+
+
+
+
+
+div.box > div:nth-child(2){
+	width:100%;
+	height:85%;
+	/*background:rgba(0,0,0,0.3);*/
+	opacity:0;
+}
+div.box > div:nth-child(3){
+	display:none;
+}
+div.box > div.lyric{
+	width:100%;
+	height:85%;
+	position:absolute;
+	top:0;
+	bottom:0;
+	display:block;
+}
+div.box > div.lyric > ul{
+	width:100%;
+	height:95%;
+	position:absolute;
+	left:0;
+	top:0;
+	overflow:hidden;
+}
+div.box > div.lyric > ul > li{
+	width:100%;
+	height:6%;
+	text-align:center;
+	line-height:20px;
+	color: rgba(225,225,225,.8);
+}
+div.box > div.lyric > ul > li.active{
+	/*color:#31c27c;*/
+	color:#fff;
+}
+
+
+
+
+
+div.box > div.list{
+	width:100%;
+	height:85%;
+	/*background:rgba(0,0,0,0.3);*/
+	opacity:1;	
+	position:relative;
+}
+div.box > div.button{
+	width:100%;
+	height:15%;
+	/*background:rgba(0,0,0,0.5);*/
+}
+
+
+
+div.button > ul.function{
+	float:left;
+	width:18%;
+	height:100%;
+}
+div.button > div.sicon{
+	float:left;
+	width:7%;
+	height:100%;
+	text-align:center;
+}
+div.button > div.progress{
+	float:left;
+	width:55%;
+	height:100%;
+}
+div.button > div.voice{
+	float:left;
+	width:14%;
+	height:100%;
+	position:relative;
+}
+div.button > div.menu{
+	float:left;
+	width:6%;
+	height:100%;
+	text-align:center;
+}
+
+
+div.button > ul.function >li{
+	width:33.333%;
+	height:100%;
+	float:left;
+	text-align:center;
+}
+div.button > ul.function >li > span{
+	line-height:89px;
+	color:#fff;
+	font-size:30px;
+}
+div.button > ul.function >li:nth-child(2) > span{
+	font-size:34px;
+}
+
+
+div.button > div.sicon >div.icon{
+	width:50px;
+	height:50px;
+	margin:20px auto;
+	background-image:url(../image/img/1.jpg);
+	background-size:cover;
+}
+
+
+div.button > div.progress > div.author{
+	width:100%;
+	height:30%;
+	text-align:center;
+}
+div.button > div.progress > div.author >span{
+	font-size:16px;
+	color:#fff;
+}
+
+div.button > div.progress > div.jindu{
+	width:100%;
+	height:70%;
+}
+div.button > div.progress > div.jindu > div.tiao{
+	width:100%;
+	height:65%;
+	position:relative;
+}
+div.button > div.progress > div.jindu > div.time{
+	width:100%;
+	height:35%;
+	text-align:center;
+}
+div.button > div.progress > div.jindu > div.time > span{
+	font-size:14px;
+	color:#fff;
+}
+
+
+div.button > div.progress > div.jindu > div.tiao > div.tiaom{
+	position:absolute;
+	top:10px;
+	left:20px;
+	width:90%;
+	height:20px;
+}
+div.button > div.progress > div.jindu > div.tiao > div.tiaom> div.moren{
+	position:absolute;
+	top:8px;
+	left:0px;
+	width:100%;
+	height:4px;
+	background:#333;
+
+}
+div.button > div.progress > div.jindu > div.tiao > div.tiaom > div.load{
+	position:absolute;
+	top:8px;
+	left:0px;
+	width:0%;
+	height:4px;
+	/*background:pink;*/
+	background:#8F9195;
+	transition:width 1s linear;
+
+}
+div.button > div.progress > div.jindu > div.tiao > div.tiaom > div.played{
+	position:absolute;
+	top:8px;
+	left:0px;
+	width:0%;
+	height:4px;
+	/*background:deeppink;*/
+	background:#fff;
+	z-index:3;
+}
+div.button > div.progress > div.jindu > div.tiao > div.tiaom > div.circle{
+	position:absolute;
+	top:0px;
+	left:-5px;
+	width:20px;
+	height:20px;
+	border-radius:50%;
+	background:#fff;
+	z-index:100;
+}
+
+
+
+
+
+div.button > div.voice > div.vicon{
+	float:left;
+	width:30%;
+	height:100%;
+	text-align:center;
+}
+div.button > div.voice > div.vicon > span{
+	font-size:30px;
+	line-height:89px;
+	color:#fff;
+}
+div.button > div.voice > div.vtiao{
+	float:left;
+	width:70%;
+	height:100%;
+
+	position:relative;
+}
+
+
+div.button > div.voice > div.vtiao > div.moren{
+	position:absolute;
+	top:44px;
+	left:0px;
+	width:100%;
+	height:4px;
+	background:#333;
+}
+div.button > div.voice > div.vtiao > div.load{
+	position:absolute;
+	top:44px;
+	left:100%;
+	width:0%;
+	height:4px;
+	background:red;
+}
+div.button > div.voice > div.vtiao > div.played{
+	position:absolute;
+	top:44px;
+	left:0%;
+	width:100%;
+	height:4px;
+	background:#ccc;
+	z-index:10;
+}
+div.button > div.voice > div.vtiao > div.circle{
+	position:absolute;
+	top:36px;
+	right:0px;
+	width:20px;
+	height:20px;
+	border-radius:50%;
+	background:#fff;
+	z-index:100;
+}
+
+
+div.button > div.menu > span{
+	font-size:30px;
+	color:#fff;
+	line-height:89px;
+}
+
+
+
+div.list > h2{
+	color:#fff;
+	height:8%;
+	text-align:center;
+}
+div.list >ul.title{
+	width:80%;
+	height:10%;
+	margin:0 auto;
+}
+div.list >ul.title > li{
+	float:left;
+	width:20%;
+	height:100%;
+	text-align:center;
+	line-height:50px;
+	font-size:18px;
+	color:#fff;
+}
+div.list >ul.list{
+	width:80%;
+	height:82%;
+	margin:0 auto;
+}
+div.list >ul.list > li{
+	width:100%;
+	height:10%;
+}
+div.list >ul.list > li >span{
+	float:left;
+	text-align:center;
+	width:20%;
+	height:100%;
+	line-height:40px;
+	/*color:#666;*/
+	color:rgba(225,225,225,0.8);
+}
+div.list >ul.list > li.active{
+	background:rgba(255,255,255,0.5);
+	
+}
+div.list >ul.list > li.active >span{
+	color:#fff;
+}

@@ -1,0 +1,125 @@
+*{
+	margin:0;
+	padding:0;
+	list-style: none;
+}
+a{
+    text-decoration:none;
+}
+
+
+
+div.title{
+	width:1200px;
+	height:50px;
+	padding-top:20px;
+	margin:0 auto;
+}
+.title p{
+	width:90%;
+	height:100%;
+	font-size:20px;
+	float:left;
+}
+.title button{
+	width:5%;
+	float:right;
+	height:30px;
+}
+
+
+div.list{
+	width:1200px;
+	height:auto;
+	overflow:hidden;
+	margin:0 auto;
+}
+.list ul{
+	width:100%;
+	height:auto;
+}
+.list ul li{
+	width:1200px;
+	height:120px;
+	border:1px solid #ccc;
+	box-sizing:border-box;
+	margin-bottom:15px;
+}
+
+
+.list ul li div.rect{
+	width:40px;
+	height:100%;
+	float:left;
+}
+
+
+.list ul li div.pic{
+	width:120px;
+	height:100%;
+	float:left;
+}
+.list ul li div.pic img{
+	height:100%;
+}
+
+
+.list ul li div.mess{
+	width:440px;
+	height:100%;
+	float:left;
+}
+.list ul li div.mess p{
+	text-indent:40px;
+	line-height:26px;
+}
+
+.list ul li div.num{
+	width:300px;
+	height:100%;
+	float:left;
+}
+.list ul li div.num p{
+	height:60px;
+	width:100%;
+	text-align:center;
+	line-height:60px;
+}
+.list ul li div.num div.box{
+	width:200px;
+	height:50px;
+	margin:0 auto;
+	display:flex;
+	justify-content: space-around;
+}
+.list ul li div.num div.box div{
+	width:30px;
+	height:30px;
+	border-radius:50%;
+	background:#eee;
+	margin-top:10px;
+	text-align:center;
+	line-height:28px;
+	font-size:26px;
+	color:#333;
+	cursor:pointer;
+}
+.list ul li div.num div.box div.nub{
+	font-size:20px;
+	border-radius:0;
+	background:none;
+	cursor:none;
+}
+
+
+.list ul li div.button{
+	width:298px;
+	height:100%;
+	float:left;
+}
+.list ul li div.button button{
+	width:80px;
+	height:40px;
+	margin-top:40px;
+	margin-left:60px;
+}
