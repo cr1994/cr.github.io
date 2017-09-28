@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="x5-orientation" content="portrait|landscape">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="full-screen" content="yes">
+    <meta name="format-detection" content="telephone=no,email=no">
+	<title>list</title>
+	<script src="../js/rem.js"></script>
+	<script src="../js/jquery.js"></script>
+	<script src="../js/iscroll.js"></script>
+	<link rel="stylesheet" href="../css/zjj-shirtlist.css">
+	<style>
+		#wrapper {
+			position: absolute;
+			z-index: 1;
+			top: 0;
+			bottom: 0.50rem;
+			left: 0;
+			width: 100%;
+			overflow: hidden;
+		}
+		#scroller {
+			position: absolute;
+			z-index: 1;
+			-webkit-tap-highlight-color: rgba(0,0,0,0);
+			width: 100%;
+			-webkit-transform: translateZ(0);
+			-moz-transform: translateZ(0);
+			-ms-transform: translateZ(0);
+			-o-transform: translateZ(0);
+			transform: translateZ(0);
+			-webkit-touch-callout: none;
+			-webkit-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+			-webkit-text-size-adjust: none;
+			-moz-text-size-adjust: none;
+			-ms-text-size-adjust: none;
+			-o-text-size-adjust: none;
+			text-size-adjust: none;
+		}
+		
+	</style>
+</head>
+	
+<body onload="loaded()">
+	<!-- 顶部开始 -->
+	<div class="header">
+		<div class="leimu1">
+			<div>
+				<a href="xx-class.html"></a>
+			</div>
+			<div>
+				<h3>衬·衣</h3>
+				<h4>S H I R T</h4>
+			</div>
+			<div></div>
+		</div>
+		<div class="tiao"></div>
+		<div class="classify">
+			<div class="c-box">
+				<div class="type">
+					<span>the</span>
+					<p>MAN</p>
+					<img src="../img/xx-classa02.png"/>
+					<p>综合</p>
+					<div></div>
+					<div></div>
+				</div>
+				<img src="../img/xx-class03.png"/>
+				<div class="type">
+					<span>the</span>
+					<p>WOMAN</p>
+					<img src="../img/xx-classa02.png"/>
+					<p>价格</p>
+					<div></div>
+					<div></div>
+				</div>
+				<div class="type">
+					<span>the</span>
+					<p>LIFE</p>
+					<img src="../img/xx-classa02.png"/>
+					<p>人气</p>
+					<div></div>
+					<div></div>
+				</div>
+			</div>
+			
+			<div class="sort"></div>
+		</div>
+		<div class="line-box">
+			<div class="ldian"></div>
+			<div class="line"></div>
+			<div class="rdian"></div>
+		</div>
+	</div>
+	<!-- 顶部结束 -->
+	<!-- 商品展示区 -->
+	<div id="wrapper">
+		<div class="shop" id="scroller">
+			
+			<ul class="shop-left">
+				<li class="shirtl">
+					<a href="xx-careful.html">
+						<img src="../img/zjj-shirt2.png" alt="">
+						<h3>格子衬衫</h3>
+						<h4>SHJLEHERTY <span>SHIRT</span></h4>
+						<div class="price"><b>98.00</b>RMB</div><div class="zan"></div>
+						<img src="../img/zjj-count.png" alt="" id="count">
+					</a>
+				</li>
+				<li class="shirtl">
+					<a href="xx-careful.html">
+						<img src="../img/zjj-shirt2.png" alt="">
+						<h3>格子衬衫</h3>
+						<h4>SHJLEHERTY <span>SHIRT</span></h4>
+						<div class="price"><b>98.00</b>RMB</div><div class="zan"></div>
+						<img src="../img/zjj-count.png" alt="" id="count">
+					</a>
+				</li>
+				<li class="shirtl">
+					<a href="xx-careful.html">
+						<img src="../img/zjj-shirt2.png" alt="">
+						<h3>格子衬衫</h3>
+						<h4>SHJLEHERTY <span>SHIRT</span></h4>
+						<div class="price"><b>98.00</b>RMB</div><div class="zan"></div>
+						<img src="../img/zjj-count.png" alt="" id="count">
+					</a>
+				</li>
+				<li class="shirtl">
+					<a href="xx-careful.html">
+						<img src="../img/zjj-shirt2.png" alt="">
+						<h3>格子衬衫</h3>
+						<h4>SHJLEHERTY <span>SHIRT</span></h4>
+						<div class="price"><b>98.00</b>RMB</div><div class="zan"></div>
+						<img src="../img/zjj-count.png" alt="" id="count">
+					</a>
+				</li>
+			</ul>
+			<ul class="shop-right">
+				<li class="shirtr">
+					<a href="xx-careful.html">
+						<img src="../img/zjj-shirt3.png" alt="">
+						<h3>格子衬衫</h3>
+						<h4>SHJLEHERTY <span>SHIRT</span></h4>
+						<div class="price"><b>98.00</b>RMB</div><div class="zan"></div>
+						<img src="../img/zjj-count.png" alt="" id="count">
+					</a>
+				</li>
+				<li class="shirtr">
+					<a href="xx-careful.html">
+						<img src="../img/zjj-shirt4.png" alt="">
+						<h3>格子衬衫</h3>
+						<h4>SHJLEHERTY <span>SHIRT</span></h4>
+						<div class="price"><b>98.00</b>RMB</div><div class="zan"></div>
+						<img src="../img/zjj-count.png" alt="" id="count">
+					</a>
+				</li>
+				<li class="shirtr">
+					<a href="xx-careful.html">
+						<img src="../img/zjj-shirt4.png" alt="">
+						<h3>格子衬衫</h3>
+						<h4>SHJLEHERTY <span>SHIRT</span></h4>
+						<div class="price"><b>98.00</b>RMB</div><div class="zan"></div>
+						<img src="../img/zjj-count.png" alt="" id="count">
+					</a>
+				</li>
+				<li class="shirtr">
+					<a href="xx-careful.html">
+						<img src="../img/zjj-shirt3.png" alt="">
+						<h3>格子衬衫</h3>
+						<h4>SHJLEHERTY <span>SHIRT</span></h4>
+						<div class="price"><b>98.00</b>RMB</div><div class="zan"></div>
+						<img src="../img/zjj-count.png" alt="" id="count">
+					</a>
+				</li>
+			</ul>
+			
+		</div>
+	</div>
+	
+</body>
+</html>
+<script>
+	function loaded(){
+		var myscroll=new IScroll("#wrapper",{
+
+            scrollbars: true,
+			mouseWheel: true,
+			interactiveScrollbars: true,
+			shrinkScrollbars: 'scale',
+			fadeScrollbars: true
+        });
+	}
+   
+	
+</script>

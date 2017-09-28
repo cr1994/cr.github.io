@@ -1,0 +1,463 @@
+html{
+	-ms-touch-action: none;
+}
+body{
+	overflow:hidden;
+	background: #fff;
+}
+header{
+	width: 7.5rem;
+	height: 2.13rem;
+	background: url('../img/n-bg.png');
+	position: absolute;
+	z-index: 10000;
+	top:0;
+	left: 0
+}
+header>.top{
+	width:100%;
+	height:1.09rem;
+	padding-top:.20rem;
+}
+header>.top>div{
+	width: .88rem;
+	float: left;
+}
+header>.top>.lf,header>.top>.rg{
+ 	height:.88rem;
+}
+
+header>.top>.md{
+	padding: .08rem  0  0  2.45rem;
+	height: .66rem;
+}
+header>.top>.rg{
+	width:1.12rem;
+	float: right;
+}
+header>.top>div>a{
+	display: block;
+	width: .88rem;
+	height: 100%
+}
+header>.top>div>a:first-child{
+	margin-left: -.2rem
+}
+header>.top>div>a>img,header>.top>div>img{
+	width: .88rem
+}
+header>.top>.rg>a>img{
+    width: 1rem
+}
+header>.bottom{
+	width: 2.58rem;
+	height: .68rem;
+	margin-left:2.46rem;
+	background: url('../img/n-chose.png') ;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	padding: 0.08rem;
+	color: #ccc
+}
+header>.bottom>a{
+	display: block;
+	width: 48%;
+	height: 77%;
+	float: left;
+	line-height:.5rem;
+	text-align: center;
+}
+header>.bottom>a.active{
+	background: #3392CF;
+    border-radius: 1.1rem;
+    margin: .02rem 0 0 .03rem;
+}
+header>.bottom>a>.design{
+	width: 100%;
+	display: inline-block;
+	height: .51rem;
+	color: #fff;
+}
+header>.bottom>a>.design>span{
+	display: inline-block;
+	width: .05rem;
+	height: .05rem;
+	border-radius: 50%;
+	background: #fff;
+}
+header>.bottom>a>.baby>span{
+	display: inline-block;
+    width: .05rem;
+	height: .05rem;
+	color:#38EDA8;
+	text-align: center;
+	line-height: .04rem;
+	transform:rotate(45deg);
+	color: #fff;
+}
+nav{
+	display: none
+}
+nav:first-child{
+	display: block;
+}
+.chose{
+   width: 100%;
+   height: 5.02rem;
+   position: relative;
+}
+.chose>.swiper-container >.swiper-pagination>.swiper-pagination-bullet-active {
+    background: #007aff;
+}
+.chose>.swiper-container>.swiper-wrapper>.swiper-slide>a{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.chose>.swiper-container>.swiper-wrapper>.swiper-slide>a>img{
+	width: 7.5rem;
+}
+.ban>.swiper-container3{
+	width: 7.02rem;
+	margin:0 auto;
+}
+.ban>.swiper-container3>.swiper-wrapper>.swiper-slide{
+	width: 7.02rem;
+}
+.ban>.swiper-container3>.swiper-wrapper>.swiper-slide>img{
+	width: 7.02rem;
+}
+.dingwei{
+	width: 100%;
+	height: 1.09rem;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background:#e9e9e9
+}
+.dingwei>div{
+	height: 1.09rem;
+    float: left;
+}
+.dingwei>.icon,.dingwei>.icon>img{
+	width: 1.25rem;
+}
+.dingwei>.font{
+	width: 2.6rem;
+}
+.dingwei>#fonts{
+	padding: 0
+}
+.dingwei>.font>p:first-child{
+	height: 40%;
+	color: #666;
+	padding: .05rem 0  0  .25rem;
+	font-size: .12rem;
+	line-height: .6rem
+}
+.dingwei>.font>p:last-child{
+	height: 60%;
+	color: #333;
+	font-size: .14rem;
+	padding: .05rem 0  0  .25rem;
+}
+.dingwei>.talk{
+	width: 1.48rem;
+	height: 100%;
+	padding-left:.26rem ;
+}
+.dingwei>.talk>div{
+	float: left;
+	margin-top:.25rem;
+	width: .55rem;
+    height: .55rem;
+	background: #fff;
+	border-radius: 50%;
+	text-align: center;
+	line-height: .55rem;
+}
+.dingwei>.talk>div>img{
+	width: .50rem;
+	border-radius: 50%
+}
+.dingwei>.talk>span{
+	float: left;
+	width: .86rem;
+	height:50%;
+	line-height:.7rem;
+	padding-left:.07rem;
+	color: #666;
+}
+.dingwei>.talk>span:last-child{
+	line-height:.3rem;
+	color: #333;
+}
+
+/*四个图标*/
+section{
+	width: 100%;
+	height: 1.85rem;
+	padding-top: .2rem;
+}	
+section>.icon{
+	width: 25%;
+	height: 1.85rem;
+	float: left;
+	text-align: center;
+}
+section>.icon>a{
+	color: #333;
+	display: block;
+	width: 100%;
+	height: 100%
+}
+section>.icon>a>img{
+	width: 1.02rem;
+}
+/*标题1*/
+.title{
+	width: 100%;
+	height: 1.28rem;
+	line-height: 1.28rem;
+	background: #e9e9e9
+}
+.title>img{
+	width: 1.90rem;
+	margin:.2rem 0 0 .38rem;
+}
+/*标题2*/
+.ban{
+	margin-top: .2rem;
+	width: 7.5rem;
+	height: 3.98rem;
+	position: relative;
+}
+/*作品展示开始*/
+.special{
+	width: 100%;
+	height: 3.42rem;
+	margin-top: .7rem
+}
+.special>.box{
+	width: 2.32rem;
+	height: 1.49rem;
+	padding-top:1.8rem;
+	float: left;
+	margin-left: .2rem
+}
+.special>.box1{
+	background: url('../img/n-diaodeng.png');
+	background-size: 100%
+}
+.special>.box2{
+	background: url('../img/n-zy.png');
+	background-size: 100%;
+	margin-left: .09rem
+}
+.special>.box3{
+	background: url('../img/n-chaoxie.png');
+	background-size: 100%;
+	margin-left: .09rem
+}
+.special>.box>.star{
+	padding-left: .26rem
+}
+.special>.box>h5{
+	padding: .03rem 0 0 .6rem;
+	font-size: .24rem;
+	color: #444;
+}
+.special>.box>pre{
+	padding: .1rem 0 0 0.24rem;
+	font-size: .20rem;
+	color: #444;
+}
+/*设计师展示开始*/
+.designer{
+	width: 7.18rem;
+	height: 2.28rem;
+	margin: 0.35rem auto;
+	background: url('../img/n-dbg.png');
+	background-size: 100%;
+}
+.designer>.left{
+	width: 1.14rem;
+	height: 100%;
+	float: left;
+	padding-left: .2rem;
+}
+.designer>.left>.touxiang{
+	margin:.3rem 0  0 .09rem;
+	width: 1.14rem;
+	height: 1.14rem;
+	text-align: center;
+	background: url('../img/n-tou1.png');
+	background-size: 100%;
+}
+.designer>.left>.touxiang>img{
+	width: 1.14rem
+}
+.designer>.left>.tx{
+	background: url('../img/n-tou2.png');
+	background-size: 100%;
+}
+.designer>.left>span{
+	display:inline-block;
+	margin-left: .35rem;
+	width: .55rem;
+	height: .02rem;
+	background: #FF8197;
+}
+.designer>.left>.heart{
+	height: .2rem;
+	margin-left: .14rem;
+	text-align: center;
+}
+.designer>.left>.heart>img{
+	height: .2rem
+}
+.designer>.right{
+	width: 5.09rem;
+	float: left;
+	padding:.15rem 0 0 .5rem;
+	position: relative;
+}
+.designer>.right>div{
+     height: .64rem
+}
+.designer>.right>.hot{
+	position: absolute;
+	top:-.06rem;
+	right: -.1rem;
+	width: .68rem;
+	height: .74rem;
+}
+.designer>.right>.hot>img{
+	width: 100%
+}
+.designer>.right>.t>h3{
+	font-size: .24rem;
+	color: #333
+}
+.designer>.right>.t>p{
+	font-size: .12rem;
+	color: #aaa;
+}
+.designer>.right>.m>h4{
+	font-size: .14rem;
+	color: #aaa;
+	font-weight: 400
+}
+.designer>.right>.b>h5{
+	padding-left: .3rem;
+	font-size: .04rem;
+	color: #aaa;
+	font-weight: 400
+}
+.designer2{
+	margin-bottom: .9rem
+}
+.don{
+	width: 100%;
+	height: .94rem;
+	background: #323840;
+}
+.don >ul{
+	width: 100%;
+	height: .94rem;
+	display: flex;
+}
+.don> ul> li {
+	display: block;
+	text-align: center;
+	height: 100%;
+	width: 20%;
+}
+.don >ul >li>a{
+	display: block;
+	width:.88rem;
+	height: .94rem;
+	margin: 0 auto
+}
+.don >ul >li:nth-child(1)>a{
+	background: url(../img/n-home1.png);
+	background-size: 100%;
+	background-color:#505A67;
+}
+.don >ul >li:nth-child(2)>a{
+	background: url(../img/gx-fix_78.png);
+	background-size: 100%;
+}
+.don >ul >li:nth-child(3)>a{
+	background: url(../img/gx-fix_80.png);
+	background-size: 100%;
+}
+.don >ul >li:nth-child(4)>a{
+	background: url(../img/gx-fix_83.png);
+	background-size: 100%;
+}
+.don >ul >li:nth-child(5)>a{
+	background: url(../img/gx-fix_85.png);
+	background-size: 100%;
+}
+.don >ul >li:nth-child(5)>a:hover{
+	background: url(../img/cr-wd1.png);
+	background-size: 100%;
+}
+#header {
+	position: absolute;
+	z-index: 2;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height:2.13rem;
+	/*line-height: 45px;*/
+	/*background: #CD235C;*/
+	padding: 0;
+	color: #eee;
+	font-size: 20px;
+	text-align: center;
+	font-weight: bold;
+}
+
+#footer {
+	position: absolute;
+	z-index: 2;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 0.94rem;
+	padding: 0;
+}
+
+#wrapper {
+	position: absolute;
+	z-index: 1;
+	top: 2.13rem;
+	bottom: 1rem;
+	left: 0;
+	width: 100%;
+	overflow: hidden;
+}
+
+#scroller {
+	/*position: absolute;*/
+	z-index: 1;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-transform: translateZ(0);
+	-moz-transform: translateZ(0);
+	-ms-transform: translateZ(0);
+	-o-transform: translateZ(0);
+	transform: translateZ(0);
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-text-size-adjust: none;
+	-moz-text-size-adjust: none;
+	-ms-text-size-adjust: none;
+	-o-text-size-adjust: none;
+	text-size-adjust: none;
+	background: #fff;
+}

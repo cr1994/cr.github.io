@@ -1,0 +1,237 @@
+body{
+	background: #FFFFFF;
+}
+header{
+	/*background: #30373F;*/
+	height: 4.66rem;
+	width: 100%;
+	background-image: url(../img/image/pay/xx-pay17.png);
+	position: relative;
+}
+header > div:nth-child(2){
+	width: 100%;
+	height: 1.14rem;
+}
+header > div:nth-child(2) > a{
+	display: block;
+	float: left;
+}
+header  > div:nth-child(2) > img:nth-child(2){
+	height: auto;
+	width: 2.2rem;
+	margin-left: 1.8rem;
+	margin-right: 1.48rem;
+	display: block;
+	float: left;
+	display: block;
+	margin-top: .26rem;
+}
+header > div:nth-child(2) > a:nth-child(3) > img{
+	height: auto;
+	width: 1.2rem;
+	margin-top: .42rem;
+}
+header > div:nth-child(2) > a:nth-child(1) > img{
+	height: auto;
+	width: .82rem;
+	margin-top: .38rem;
+}
+/*header div:first-child{
+	width: 100%;
+	height: .4rem;
+}*/
+header > div:nth-child(3){
+	background-image: url(../img/image/pay/xx-pay04.png);
+	background-size: 100%;
+	width: 3.82rem;
+	height: .72rem;
+	line-height: .72rem;
+	text-align: center;
+	color: #FFFFFF;
+	margin: .1rem auto;
+}
+header > p{
+	width: 100%;
+	height: .03rem;
+	position: absolute;
+	left: 0;
+	/*top: .4rem;*/
+	top:0;
+	background-image: url(../img/xx-paya01.png);
+	background-size: 100%;
+	
+}
+.card{
+	width: 100%;
+	height: 2.96rem;
+	position: absolute;
+	top: 1.78rem;
+	left: 0;
+	/*border-top: 1px solid #000000;
+	border-bottom: 1px solid #000000;*/
+}
+.card > div:first-child{
+	width: 1.12rem;
+	height: 1.95rem;
+	background-image: linear-gradient(to right,#7cbce6 1%,#3594cf 99%);
+	float: left;
+	margin-top: 1.17rem;
+}
+.card > div:nth-child(3){
+	width: 1.12rem;
+	height: 1.95rem;
+	background-image: linear-gradient(to right,#3594cf 1%,#7cbce6 99%);
+	float: right;
+	margin-top: 1.17rem;
+}
+.card > img{
+	width: 4.23rem;
+	margin: .94rem 0 0 .56rem;
+	float: left;
+}
+.card > ul{
+	position: absolute;
+	top: 3.77rem;
+	left: 3.3rem;
+	width: .9rem;
+	height: .08rem;
+}
+.card li{
+	width: .08rem;
+	height: .08rem;
+	float: left;
+	border-radius: 50%;
+	background: #afafaf;
+	margin-left: .11rem;
+}
+.card li:nth-child(2){
+	background: #32eda9;
+}
+article{
+	width: 100%;
+	height: 3.66rem;
+	border-top: 1px solid #A2A0A0;
+	margin-top: 1.4rem;
+	padding: 0 .46rem;
+	box-sizing: border-box;
+}
+section:first-child{
+	width: 100%;
+	height: 1.26rem;
+}
+.top{
+	width: auto;
+	height: auto;
+	margin-top: .46rem;
+	/*overflow: hidden;*/
+}
+.top > div{
+	width: .1rem;
+	height: .1rem;
+	border-radius: 50%;
+	background: #3EA6FF;
+	float: left;
+	margin-top: .2rem;
+	margin-left: -0.2rem;
+}
+.top > span{
+	font-size: .3rem;
+	color: #757575;
+}
+.top > span:nth-of-type(2){
+	margin-left: .46rem;
+}
+.top + p{
+	color: #ABABAB;
+}
+.top + p + div{
+	width: 3.7rem;
+	height: .15rem;
+	background-image: url(../img/xx-pay09.png);
+	background-size: 6rem;
+	margin-top: .25rem;
+}
+section:nth-of-type(2){
+	width: 6.25rem;
+	height: 1.17rem;
+}
+.center{
+	width: auto;
+	height: auto;
+	margin-top: .1rem;
+	/*overflow: hidden;*/
+}
+.center > div{
+	width: .1rem;
+	height: .1rem;
+	border-radius: 50%;
+	background: #35EFAA;
+	float: left;
+	margin-top: .2rem;
+	margin-left: -0.2rem;
+}
+.center > span{
+	font-size: .3rem;
+	color: #757575;
+}
+.center > p{
+	float: right;
+	width: 1.02rem;
+	height: .44rem;
+	background: #303F9E;
+	color: #FFFFFF;
+	text-align: center;
+	line-height: .44rem;
+	border-radius: .22rem;
+}
+.center > span:nth-of-type(2){
+	margin-left: .46rem;
+}
+.center + p{
+	color: #ABABAB;
+}
+.center + p + div{
+	width: 3.7rem;
+	height: .15rem;
+	background-image: url(../img/xx-pay09.png);
+	background-size: 6rem;
+	margin-top: .25rem;
+}
+section:nth-of-type(3){
+	width: 6.25rem;
+	height: 1.17rem;
+}
+.right{
+	width: auto;
+	height: auto;
+	margin-top: .1rem;
+	/*overflow: hidden;*/
+}
+.right > div{
+	width: .1rem;
+	height: .1rem;
+	border-radius: 50%;
+	background: #FDB939;
+	float: left;
+	margin-top: .2rem;
+	margin-left: -0.2rem;
+}
+.right > span{
+	font-size: .3rem;
+	color: #757575;
+}
+.right > span:nth-of-type(2){
+	margin-left: .78rem;
+	font-weight: 500;
+}
+.right + p{
+	color: #ABABAB;
+}
+article + a{
+	height: .9rem;
+	width: 4rem;
+	display: block;
+	margin: 2rem auto 0 auto;
+	background-image: url(../img/xx-paya04.png);
+	background-size: 4rem;
+}

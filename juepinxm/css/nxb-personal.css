@@ -1,0 +1,276 @@
+/*头部*/
+.heads{
+	width: 100%;
+    height: 3rem;
+    margin: 0 auto;
+    position: relative;
+}
+.heads>.circle{
+	width: 2.2rem;
+    height: 1.8rem;
+    float: left;
+    border-radius:50%;
+	background-image:url(../img/cr-grzxtx1.png);
+	background-position:center;
+	background-size:100%;
+	background-repeat:no-repeat;
+	position:absolute;
+	left:50%;
+	top:.2rem;
+	margin-left:-1.1rem;
+	overflow:hidden;
+}
+.title{
+	margin: .2rem auto  0;
+	background: #fff;
+}
+.list{
+	background: #fff
+}
+.heads>.circle>.pic{
+	width: 1.3rem;
+    height: 1.3rem;
+}
+.heads>.circle1{
+    left: 8%;
+}
+.heads>.one{
+	width: 1.35rem;
+    height: 1.37rem;
+    background: url('../img/n-c.png');
+    background-size: 100%;
+    margin-left:0;
+    top:0.5rem;
+}
+.heads>.circle>.pic{
+	background-image:url(../img/cr-tpic.jpg);
+	background-size:100%;
+	background-position:center;
+	border-radius:50%;
+	margin:0.2rem auto;
+}
+.heads>.one>.pic{
+	width: 1rem;
+	height: 1rem;
+}
+.heads>.circle2{
+    left: 75%;
+}
+.heads>.circle>h4{
+	position: relative;
+	background: red;
+	color:#aaa;
+	top:2rem;
+}
+/*选项卡二第一部分开始*/
+.per {
+  margin-top: 0.6rem;
+  width: 100%;
+}
+
+.per ul {
+  width: 100%;
+  padding: 0 0.24rem;
+  height: 3.2rem;
+  box-sizing: border-box;
+  background-image: url("../img/creat/md_49.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 0 1.6rem;
+}
+
+.per ul li {
+  float: left;
+  width: 33.333333%;
+  height: 3.2rem;
+}
+
+.per ul li .bg {
+  background-image: url("../img/creat/cr-grzxtx1.png");
+  background-size: cover;
+  width: 1.6rem;
+  height: 1.6rem;
+  margin: 0 auto;
+  overflow: hidden; 
+  position: relative;
+}
+
+.per ul li .bg .tx {
+  width: 1.1rem;
+  height: 1.1rem;
+  border-radius: 50%;
+  background-color: #00c0a5;
+  margin-left: 0.32rem;
+  margin-top: 0.28rem;
+ 
+}
+.per ul li .bg  img{
+	position: absolute;
+	top:.07rem;
+	left: .29rem;
+	width: .7rem;
+}
+
+.inf {
+  text-align: center;
+}
+
+.inf h6 {
+  color: #818181;
+  font-size: 0.24rem;
+  font-weight: 400;
+}
+
+.inf p {
+  margin-top: 0.05rem;
+  color: #b1b1b1;
+  font-size: 0.2rem;
+  text-transform: capitalize;
+  margin-bottom: -0.1rem;
+}
+
+.inf img {
+  margin-top: -0.1rem;
+  width: 0.24rem;
+  height: 0.04rem;
+}
+
+.inf .str {
+  width: 100%;
+  margin-top: 0.05rem;
+}
+
+.inf .str .sta {
+  width: 0.28rem;
+  height: 0.28rem;
+  margin-left: -0.04rem;
+  margin-right: -0.04rem;
+}
+
+.per ul .star .bg {
+  margin-top: -0.48rem;
+  background-image: url("../img/creat/cr-grzxtx1.png");
+  width: 2.1rem;
+  height: 2.1rem;
+  position: relative;
+}
+
+.per ul .star .bg .tx {
+  width: 1.48rem;
+  height: 1.48rem;
+  margin-left: 0.42rem;
+  margin-top: 0.36rem;
+}
+
+.per ul .star .inf h6 {
+  margin-top: -0.05rem;
+  font-size: 0.26rem;
+}
+
+.per ul .star .inf .str .sta {
+  width: 0.36rem;
+  height: 0.36rem;
+}
+
+.per ul li:first-child .bg .tx {
+  background-image: url("../img/creat/tx.jpg");
+  background-size: cover;
+  background-position: -0.26rem 0;
+}
+
+.per ul li:nth-child(2) .bg .tx {
+  background-image: url("../img/creat/tx2.jpg");
+  background-size: cover;
+}
+
+.per ul li:last-child .bg .tx {
+  background-image: url("../img/creat/tx3.jpg");
+  background-size: cover;
+}
+
+/*设计师动态开始*/
+.bigbox{
+	width: 7.02rem;
+	height: 3.75rem;
+	margin: -0.35rem  auto  0;
+}
+
+.bigbox>.top{
+	height: 1.08rem;
+	padding-bottom: .37rem
+}
+.bigbox>.top>img{
+	float: left;
+	width: 1.07rem;
+}
+.bigbox>.top>div{
+	float: left;
+	width:5.75rem;
+	height:.5rem ;
+	padding:.42rem 0 0 .1rem;
+}
+.bigbox>.top>div>h5{
+	width: 100%;
+	font-family: '微软雅黑';
+	color:#1F1F1F
+}
+.bigbox>.top>div>h5>img{
+	height: .24rem
+}
+.bigbox>.top>div>p{
+    color: #aaa
+}
+.bigbox>.md>p{
+	width: 100%;
+	height: .6rem;
+	font-family: '微软雅黑';
+	color: #545454
+}
+.bigbox>.md>ul{
+	width:100%;
+	height: 1.16rem;
+	margin: .24rem 0;
+	display: flex;
+	justify-content:space-between;
+}
+.bigbox>.md>ul>li{
+	width:1.47rem;
+	height: 1.15rem;
+}
+.bigbox>.md>ul>li>img{
+	width:1.47rem;
+}
+.bigbox>.md>img{
+	width: 7.02rem;
+}
+.bigbox>.bottom{
+	width: 100%;
+	height: auto;
+	background: #fff;
+}
+.bigbox>.bottom>p{
+	text-align: center;
+	float: left;
+	font-size: .24rem;
+	font-family: '微软雅黑';
+	color: #666666;
+	line-height: 1.08rem;
+}
+.bigbox>.bottom>.dingwei{
+	float: left;
+	width: 4.84rem;
+	position: relative;
+	background: #fff;
+	padding: .01rem;
+
+}
+.bigbox>.bottom>.dingwei>.talk:first-child{
+	margin-left: 1.62rem
+}
+.bigbox>.bottom>.dingwei>.talk:last-child{
+	padding: 0
+}
+/*四部分 开始*/
+.four{
+	margin-top:.2rem;
+}

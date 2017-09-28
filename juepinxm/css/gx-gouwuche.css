@@ -1,0 +1,446 @@
+@import url("common.css");
+body{
+	overflow: auto;
+	background: white;
+}
+/*开头固定定位*/
+.header{
+	width: 100%;
+	height:auto;
+	float: left;
+	position: fixed;
+	background-image: url(../img/n-bg.png);
+	z-index: 1000;
+}
+.header .leimu1{
+	width: 100%;
+	height: auto;
+	float: left;
+	text-align: justify;
+}
+.header .leimu1:after{
+	content: "";
+    width: 100%;
+    display: inline-block;
+}
+.header .leimu1 div:first-child{
+	width: .7rem;
+	height: .7rem;
+	float: left;
+	margin-left: .4rem;
+	margin-top: .58rem;
+	display: inline-block;
+	background-image: url(../img/gx-search_102.png);
+	background-position: -13px -11px;
+	background-size: 51px;
+	background-repeat: no-repeat;
+}
+
+.header .leimu1 div:nth-child(2){
+	width: 2.06rem;
+	height: .9rem;
+	float: left;
+	margin-left: 1.6rem;
+	margin-top: .55rem;
+	position: relative;
+	/*color: #D1D2D3;*/
+	background-image: url(../img/gx-guowuche.png);
+	background-repeat: no-repeat;
+	background-size: 100px;
+	
+}
+.header .leimu1 div:nth-child(2) P:last-child{
+	font-size:12px;
+	font-family: "San Francisco Display Bold";
+	color:#98999B;
+	display: block;
+	width: 3rem;
+	height: .4rem;
+	position: absolute;
+	left: -39px;
+	bottom: 0px;
+}
+.header .leimu1 div:last-child{
+	width: 1.4rem;
+	height: .8rem;
+	float: right;
+	margin-right: .4rem;
+	margin-top: .55rem;
+	display: inline-block;
+	background-image: url(../img/n-search.png);
+	background-position: -3px -12px;
+	background-size: 77px;
+	background-repeat: no-repeat;
+}
+.header .leimu1 div:last-child a{
+	width: 1.4rem;
+	height: .8rem;
+	display: block;
+}
+.header .leimu2{
+	width: 100%;
+	height: auto;
+	float: left;
+}
+.header .leimu2 .kuang{
+	width: 3.84rem;
+	height: 1rem;
+	margin: 0 auto;
+	margin-bottom: .3rem;
+	background-image: url(../img/cr-hyqq.png);
+	background-position: -1px 1px;
+	background-size: 194px;
+	position: relative;
+	background-repeat: no-repeat;
+}
+.header > .leimu2 .kuang .three {
+  position: absolute;
+  top: 0.16rem;
+  left: 0.08rem;
+  width: 1.4rem;
+  height: 0.4rem;
+color: #999595;
+}
+
+.header > .leimu2 .kuang .active p{
+  background: #3292CF;
+  width: 1.3rem;
+  height: 0.4rem;
+  border-radius: 0.2rem;
+  color: white;
+}
+
+.header > .leimu2 .kuang .three:nth-of-type(2) {
+  left: 1.3rem;
+  /*top: 0.2rem;*/
+  color: #999595;
+}
+
+.header > .leimu2 .kuang .three:nth-of-type(3) {
+  left: 2.4rem;
+  /*top: 0.2rem;*/
+  color: #999595;
+}
+
+.header > .leimu2 .kuang .three > p {
+  height: 100%;
+  text-align: center;
+  line-height: 0.4rem;
+  font-size: 0.2rem;
+  font-family: "苹方";
+}
+
+/*内容*/
+.che-neirong{
+	width: 100%;
+	height: auto;
+	float: left;
+	position: absolute;
+	top: 3rem;
+	background: #F1EFEF;
+}
+.che-neirong .floor{
+	width: 95%;
+	height:1.8rem;
+	margin: 0 10px;
+	float: left;
+	background: white;
+	position: relative;
+}
+.che-neirong .floor img{
+	width: 1.1rem;
+	height:auto;
+	margin-top: .3rem;
+	margin-left: .4rem;
+	float: left;
+}
+.che-neirong .floor span{
+	float: left;
+	font-size: 16px;
+	margin-top: 15px;
+	font-family:  "San Francisco Display Bold";
+}
+.che-neirong .floor .cu{
+	font-weight: bold;
+	margin-left: 10px;
+}
+.che-neirong .floor .xing{
+	width: 1.2rem;
+	height: .23rem;
+	background-image: url(../img/gx-xing.png);
+	background-size: 12px;
+	position: absolute;
+	left: 1.7rem;
+	top: .75rem;
+}
+.che-neirong .floor .biaoqian{
+	width: 4rem;
+	height: .5rem;
+	margin-top: 60px;
+	margin-left: -133px;
+	float: left;
+}
+.che-neirong .floor .biaoqian div{
+	width: 1.1rem;
+	height: 100%;
+	background-image: url(../img/gx-yuan.png);
+	float: left;
+	background-repeat: no-repeat;
+	background-size:52px;
+	text-align: center;
+	margin-right: .1rem;
+}
+.che-neirong .floor .flag{
+	width: 1.4rem;
+	height: .5rem;
+	background-image: url(../img/gx-flag.png);
+	background-repeat: no-repeat;
+	background-size:20px;
+	position: absolute;
+	right: 20px;
+	top: 60px;
+}
+.che-neirong .floor .flag .Nub{
+	width: 1rem;
+	height: .4rem;
+	border-radius: 10px;
+	background: #F9F9F9;
+	margin-left: 25px;
+	font-size: 12px;
+	font-family: "苹方";
+	text-align: center;
+	line-height: .4rem;
+	color: #B7BBC1;
+	font-weight: bold;
+}
+.che-neirong .floor .cost{
+	width: 2rem;
+	height: 1rem;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	font-weight: bold;
+}
+.che-neirong .floor .cost p{
+	position: absolute;
+	right: 10px;
+	color: red;
+}
+.che-neirong .floor .cost p:first-child{
+	font-size: 24px;
+}
+.che-neirong .floor .cost p:last-child{
+	top: 25px;
+	font-size: 14px;
+}
+.che-neirong .floor .ge{
+	width: 100%;
+	position: absolute;
+	left: -20px;
+	bottom: 0rem;
+	z-index: 10
+}
+
+/*信息*/
+.che-news{
+	width: 96%;
+	height: auto;
+	/*position: absolute;*/
+	top: 9rem;
+	/*font-family: "苹方";*/
+	text-align: right;
+	color: #99A0A9;
+	/*margin: 0px auto;*/
+	position: relative;
+	/*margin-bottom: 2rem;*/
+	float: left;
+}
+.op{
+	width: 96%;
+	height: auto;
+	/*position: absolute;*/
+	top: 7rem;
+	/*font-family: "苹方";*/
+	text-align: right;
+	color: #99A0A9;
+	/*margin: 0px auto;*/
+	position: relative;
+	/*margin-bottom: 2rem;*/
+	float: left;
+}
+.sla{
+	width: 96%;
+	height: auto;
+	/*position: absolute;*/
+	top: 5rem;
+	/*font-family: "苹方";*/
+	text-align: right;
+	color: #99A0A9;
+	/*margin: 0px auto;*/
+	position: relative;
+	/*margin-bottom: 2rem;*/
+	float: left;
+}
+.che-news .bianhao{
+	font-size:18px ;
+	margin-bottom: 10px;
+}
+.che-news .zhifu{
+	width: 100%;
+	height: .6rem;
+	margin-bottom: 10px;
+}
+.che-news .zhifu img{
+	position: absolute;
+	top: 35px;
+	right: 170px;
+}
+.che-news .zhifu span{
+	line-height: .6rem;
+	font-size: 26px;
+	padding-left: 5px;
+}
+.che-news .jine .r{
+	font-size: 18px;
+	padding-bottom: 10px;
+	position: absolute;
+	top: 81px;
+	right: 95px;
+}	
+.che-news .jine .j{
+	font-size: 30px;
+}
+.che-news .youhui p{
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+.che-news .youhui span:first-child{
+	color: #32E9AB;
+	font-size:20px ;
+}
+.che-news .youhui span:last-child{
+	font-size:20px ;
+	font-family:  "San Francisco Display Bold";
+}
+.che-news .youhui img{
+	position: absolute;
+	top:120px;
+	right: 190px;
+}
+.che-news .add{
+		margin-bottom: 10px;
+}
+.che-news .add img{
+	position: absolute;
+	top:145px;
+	left: 80px;
+	width: 16px;
+	height: auto;	
+}
+.che-news .add span{
+	font-size: 12px;
+}
+.che-news .shou img{
+	position: absolute;
+	right: 80px;
+	top: 171px;
+	width: 15px;
+	height: 15px;
+}
+
+
+a.che-paya{
+	display: block;
+	width: 60%;
+	height: auto;
+	position: absolute;
+	top: 14rem;
+	margin-bottom: 2rem;
+/*	background: red;*/
+	margin-left: 20%;
+}
+.che-pay{
+	/*display: block;
+	width: 60%;
+	height: auto;
+	position: absolute;
+	top: 14rem;
+	margin-bottom: 2rem;
+	background: red;
+	margin-left: 20%;*/
+	display:block;
+	width:100%;
+}
+.opq{
+	display: block;
+	width: 60%;
+	height: auto;
+	position: absolute;
+	top: 11.7rem;
+	margin-bottom: 2rem;
+	background: red;
+	margin-left: 20%;
+}
+.slaa{
+	display: block;
+	width: 60%;
+	height: auto;
+	position: absolute;
+	top: 10rem;
+	margin-bottom: 2rem;
+	background: red;
+	margin-left: 20%;
+}
+.ping{
+	display: none;
+}
+.pl{
+	display: block;
+}
+
+/*底部固定定位*/
+.che-don{
+	width: 100%;
+	height: .94rem;
+	background: #323840;
+	position: fixed;
+	bottom: 0;
+}
+.che-don >ul{
+	width: 100%;
+	height: .94rem;
+	display: flex;
+}
+.che-don> ul> li {
+	display: block;
+	text-align: center;
+	height: 100%;
+	width: 20%;
+}
+.che-don >ul >li>a{
+	display: block;
+	width:.88rem;
+	height: .94rem;
+	margin: 0 auto
+}
+.che-don >ul >li:nth-child(1)>a{
+	background: url(../img/gx-fix_03.png);
+	background-size: 100%;
+}
+.che-don >ul >li:nth-child(2)>a{
+	background: url(../img/gx-fix_78.png);
+	background-size: 100%;
+}
+.che-don >ul >li:nth-child(3)>a{
+	background: url(../img/gx-fix_80.png);
+	background-size: 100%;
+}
+.che-don >ul >li:nth-child(4)>a{
+	background: url(../img/n-home4.png);
+	background-size: 104%;
+	background-position: 0px -3px;
+}
+.che-don >ul >li:nth-child(5)>a{
+	background: url(../img/gx-fix_85.png);
+	background-size: 100%;
+}

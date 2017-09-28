@@ -1,0 +1,174 @@
+@import url("common.css");
+body{
+	overflow: auto;
+	background: white;
+}
+/*开头固定定位*/
+.header{
+	width: 100%;
+	height:auto;
+	float: left;
+	position: fixed;
+	background-image: url(../img/n-bg.png);
+}
+.header .leimu1{
+	width: 100%;
+	height: auto;
+	float: left;
+	text-align: justify;
+}
+.header .leimu1:after{
+	content: "";
+    width: 100%;
+    display: inline-block;
+}
+.header .leimu1 div:first-child{
+	width: .8rem;
+	height: .8rem;
+	float: left;
+	margin-left: .4rem;
+	margin-top: .45rem;
+	display: inline-block;
+	background-image: url(../img/n-menu.png);
+	background-position: -18px -14px;
+	background-size: 66px;
+	background-repeat: no-repeat;
+}
+.header .leimu1 div:nth-child(2){
+	width: 1.06rem;
+	height: .9rem;
+	float: left;
+	margin-left: 2rem;
+	margin-top: .45rem;
+	display: inline-block;
+	background-image: url(../img/n-title.png);
+	background-position: -4px 0px;
+	background-size: 66px;
+	background-repeat: no-repeat;
+}
+.header .leimu1 div:last-child{
+	width: 1.4rem;
+	height: .8rem;
+	float: right;
+	margin-right: .4rem;
+	margin-top: .45rem;
+	display: inline-block;
+	background-image: url(../img/n-search.png);
+	background-position: -3px -14px;
+	background-size: 90px;
+	background-repeat: no-repeat;
+}
+.header .leimu2{
+	width: 100%;
+	height: auto;
+	float: left;
+}
+.header .leimu2 .kuang{
+	width: 3.84rem;
+	height: 1rem;
+	margin: 0 auto;
+	margin-bottom: .3rem;
+	background-image: url(../img/n-chose.png);
+	background-position: -2px 1px;
+	background-size: 196px;
+	position: relative;
+	background-repeat: no-repeat;
+}
+.header .leimu2 .kuang .baby{
+	width: 2rem;
+	height: .7rem;
+	background: #3292CF;
+	position: absolute;
+	left: 6px;
+	top:9px;
+	border-radius:20px ;
+}
+.header .leimu2 .kuang .baby p{
+	font-size: 16px;
+	text-align: center;
+	font-family: "苹方";
+	color: white;
+	margin-top: 3px;
+}
+.header .leimu2 .kuang .baby p span{
+	color: #32EAAA;
+	line-height: .48rem;
+	font-size: 20px;
+}
+.header .leimu2 .kuang .sheji{
+	width: 2rem;
+	height: .7rem;
+	position: absolute;
+	right: -3px;
+	top:10px;
+}
+.header .leimu2 .kuang .sheji p{
+	font-size: 16px;
+	text-align: center;
+	font-family: "苹方";
+	color: #999595;
+	margin-top: 3px;
+}
+.header .leimu2 .kuang .sheji p span{
+	color: #999595;
+	line-height: .48rem;
+	font-size: 20px;
+}
+/*底部固定定位*/
+#footer {
+	position: absolute;
+	z-index: 2;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 0.94rem;
+	/*background: #444;*/
+	padding: 0;
+	/*border-top: 1px solid #444;*/
+}
+.don{
+	width: 100%;
+	height: .94rem;
+	background: #323840;
+}
+.don >ul{
+	width: 100%;
+	height: .94rem;
+	display: flex;
+}
+.don> ul> li {
+	display: block;
+	text-align: center;
+	height: 100%;
+	width: 20%;
+}
+.don >ul >li>a{
+	display: block;
+	width:.88rem;
+	height: .94rem;
+	margin: 0 auto
+}
+.don >ul >li:nth-child(1)>a{
+	background: url(../img/gx-fix_03.png);
+	background-size: 100%;
+}
+.don >ul >li:nth-child(1)>a:hover{
+	background: url(../img/n-hover1.png);
+	background-size: 100%;
+}
+.don >ul >li:nth-child(2)>a{
+	background: url(../img/gx-fix_78.png);
+	background-size: 100%;
+}
+.don >ul >li:nth-child(3)>a{
+	background: url(../img/gx-fix_80.png);
+	background-size: 100%;
+}
+.don >ul >li:nth-child(4)>a{
+	background: url(../img/gx-fix_83.png);
+	background-size: 100%;
+}
+.don >ul >li:nth-child(5)>a{
+	background: url(../img/gx-fix_85.png);
+	background-size: 100%;
+}

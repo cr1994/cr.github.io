@@ -1,0 +1,324 @@
+/*头部*/
+body{
+    background-color:#fff;
+    overflow: hidden;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html {
+    -ms-touch-action: none;
+}
+#wrapper {
+    position: absolute;
+    z-index: 1;
+    top:0rem;
+    /*bottom: 48px;*/
+    bottom:0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+}
+#scroller {
+    position: absolute;
+    z-index: 1;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    width: 100%;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+    -o-text-size-adjust: none;
+    text-size-adjust: none;
+}
+.header{
+    width: 100%;
+    height:0.88rem;
+    position: absolute;
+    top:0;
+    left:0;
+    background-image: url(../img/creat/cr1_03_01.png);
+    display: flex;
+    justify-content:space-between;
+    z-index:100000;
+}
+.header .back{
+    width:0.88rem;
+    height:0.88rem;
+}
+.header .back img{
+    width:0.88rem;
+    height:0.88rem;
+}
+.header > .search{
+    width:1.2rem;
+    height:0.88rem;
+}
+.header > .search img{
+    width:1.2rem;
+    height:0.88rem;
+}
+.header .title img{
+    width:1.92rem;
+    height:0.88rem;
+}
+/*热门原创*/
+.hot{
+    width:100%;
+    margin-top:0.88rem;
+}
+.hot .title img{
+    width:100%;
+    height:1.38rem;
+    margin-top:0.52rem;
+}
+.hot ul{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+}
+.hot ul li{
+    margin-top:0.6rem;
+    width:50%;
+    height:auto;
+}
+.hot > ul li .bg{
+    width:3.11rem;
+    height:3.82rem;
+    background-size:100%;
+    position: relative;
+    margin-left:0.36rem;
+}
+.hot > ul li:first-child .bg{
+    background-image:url("../img/creat/cr_01_03.png");
+}
+.hot ul li:last-child .bg{
+    background-image:url("../img/creat/cr_01_03.png");
+}
+.hot ul li .bg img{
+    position: absolute;
+    left:-0.26rem;
+    z-index:100;
+    top:-0.6rem;
+    width:1.54rem;
+    height:1.54rem;
+}
+.hot ul li:first-child .bg img{
+    left:-0.3rem;
+}
+.hot ul li .bg .img{
+    width:2.58rem;
+    height:3.62rem;
+    position: absolute;
+    top:-0.06rem;
+    right:-0.02rem;
+    border-radius:2px;
+    background-color:#fff;
+    border:2px solid #fff;
+    box-shadow:0 0.02rem 0.2rem rgba(0,0,0,0.2);
+}
+.hot ul li:last-child .bg .img{
+    background-image:url("../img/creat/hbg_03.png");
+    background-size: cover;
+}
+.hot ul li:first-child .bg .img{
+    background-image:url("../img/creat/hbg_07.png");
+    background-size: cover;
+    background-position:50% 0;
+}
+.hot ul li .info{
+    margin-top:0.1rem;
+    width:2.92rem;
+    margin-left:0.42rem;
+}
+.hot ul li .info h6{
+    font-size:0.32rem;
+    font-weight:bold;
+    color:#3f4247;
+}
+.hot ul li .info p{
+    color:#777676;
+    font-size:0.24rem;
+    line-height:0.4rem;
+}
+.hot ul li .info > img{
+    width:76px;
+    height:4px;
+    margin-left:0.05rem;
+}
+.hot ul li .info ul{
+    width:100%;
+    height:0.7rem;
+}
+.hot ul li .info ul li{
+    margin-top:0.02rem;
+}
+.hot ul li .info .text li:first-child{
+    float: left;
+    height:0.7rem;
+}
+.hot ul li .info .text li img{
+    width:0.42rem;
+    height:0.42rem;
+    margin-top:0.12rem;
+    float: left;
+}
+.hot ul li .info .text li:first-child span{
+    font-size:0.24rem;
+    color:#c3c3c3;
+    float: left;
+}
+.hot ul li .info .text li:last-child{
+    float: right;
+    height:0.7rem;
+}
+.hot ul li .info .text li span{
+    line-height:0.7rem;
+    float:right;
+    margin-left:0.05rem;
+}
+.hot ul li .info .text li:last-child span:first-child{
+    color:#3f4247;
+    font-size:0.24rem;
+    font-style: italic;
+    font-weight:bold;
+}
+.hot ul li .info .text li:last-child span:last-child{
+    color:#3f4247;
+    font-size:0.48rem;
+    font-style: italic;
+    font-weight:bold;
+    margin-right:0.01rem;
+    line-height:0.56rem;
+}
+/*品牌原创*/
+.creat{
+    width:100%;
+    overflow: hidden;
+}
+.creat .title{
+    margin-top:0.4rem;
+}
+.creat > .title img{
+    width:100%;
+    height:1.38rem;
+}
+.creat ul{
+    width:100%;
+}
+.creat ul li{
+    width:100%;
+    margin-top:0.3rem;
+    overflow: hidden;
+    height:3.2rem;
+}
+.creat ul li .bg{
+    width:6.32rem;
+    height:2.68rem;
+    margin:0 auto;
+    background-image: url("../img/creat/cr_03.png");
+    background-size:100%;
+    position:relative;
+}
+.creat ul li .bg .sp{
+    width:4.56rem;
+    height:2.5rem;
+    position: absolute;
+    bottom:-0.2rem;
+    right:0.1rem;
+    background-color: #fff;
+    border-radius:4px;
+    box-shadow:0 0.04rem 0.2rem rgba(0,0,0,0.1);
+    background-image:url("../img/creat/hcr_03.png");
+    background-size: cover;
+}
+.creat ul li .bg .zz{
+    background-image: url("../img/creat/creat_35.png");
+    position: absolute;
+    right:0.1rem;
+    bottom:-0.22rem;
+    z-index:10;
+    width:4.66rem;
+    height:0.53rem;
+    background-size:100%;
+}
+.creat ul li:nth-child(2) .bg .sp{
+    background-image:url("../img/creat/hcr_07.png");
+}
+.creat ul li:nth-child(3) .bg .sp{
+    background-image:url("../img/creat/hcr_10.png");
+}
+.creat ul li .bg .inf{
+    width:2.6rem;
+    height:2.56rem;
+    position: absolute;
+    z-index: 100;
+    left:0.4rem;
+    bottom:-0.48rem;
+    background-image: url("../img/creat/cr_07.png");
+    background-size:100%;
+}
+.creat ul li .bg > img{
+    position:absolute;
+    left:0.4rem;
+    top:0.02rem;
+    width:0.38rem;
+    height:0.46rem;
+}
+.creat ul li .bg .text{
+    position: absolute;
+    left:0.4rem;
+    top:0.2rem;
+    z-index:200;
+}
+.creat ul li .bg .text h6{
+    margin-top:0.8rem;
+    margin-left:0.6rem;
+}
+.creat ul li .bg .text h6 span{
+    font-size:0.22rem;
+    font-weight:bold;
+    color:#c7c7c7;
+    margin-left:0.14rem;
+}
+.creat ul li .bg .text > p{
+    color:#adadac;
+    font-size:0.22rem;
+    margin-top:0.52rem;
+    text-align: center;
+    margin-left:0.48rem;
+}
+.creat ul li .bg .text .note{
+    margin-top:0.2rem;
+    height:0.4rem;
+}
+.creat ul li .bg .text .note img{
+    float: left;
+    width:0.38rem;
+    height:0.38rem;
+    margin-left:0.3rem;
+}
+.creat ul li .bg .text .note .icon{
+    float: left;
+    margin-left:0.2rem;
+}
+.creat ul li .bg .text .note .icon img{
+    width:0.18rem;
+    height:0.18rem;
+    margin-left:0.05rem;
+    margin-top:0.1rem;
+}
+.creat {
+    margin-bottom:0.4rem;
+}

@@ -1,0 +1,66 @@
+html, body {
+    position: relative;
+    height: 100%;
+}
+body {
+    /*background: #eee;*/
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color:#000;
+    margin: 0;
+    padding: 0;
+}
+.swiper-container {
+    width: 100%;
+    height: 100%;
+    background: #000;
+}
+.swiper-slide {
+    font-size: 18px;
+    color:#fff;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    /*position: relative;*/
+}
+.swiper-slide img{
+    position: absolute;
+    top:0;
+    left:0;
+    width:7.5rem;
+    height:13.34rem;
+}
+.swiper-slide .title{
+    position: relative;
+    width:100%;
+    height:100%;
+}
+.swiper-slide .btn{
+    position:absolute;
+    bottom:1.82rem;
+    right:0.32rem;
+    z-index:100000;
+    width:3.4rem;
+    height:0.8rem;
+    border:2px solid #fff;
+    text-align: center;
+    line-height:0.8rem;
+    font-size:0.38rem;
+    color:#fff;
+}
+.swiper-pagination-fraction, .swiper-pagination-custom, .swiper-container-horizontal > .swiper-pagination-bullets{
+    bottom:1.2rem;
+    /*right:0.32rem;*/
+    width:90%;
+}
+.parallax-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 300%;
+    height: 100%;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+}
+
+

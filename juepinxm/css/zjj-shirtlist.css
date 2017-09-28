@@ -1,0 +1,456 @@
+@import url("common.css");
+
+body{
+	background: #fff;
+	font-family: "宋体";
+}
+/*顶部开始*/
+.header{
+	width: 100%;
+	height:auto;
+	float: left;
+	position: fixed;
+	z-index: 100;
+	background: #fff;
+	/*position: relative;*/
+}
+.header .leimu1{
+	width: 100%;
+	height: auto;
+	float: left;
+	text-align: justify;
+	background: url(../img/xx-class04.png) no-repeat -0.3rem -0.1rem/110% 100%;
+	z-inde:5;
+}
+.header .leimu1:after{
+	content: "";
+    width: 100%;
+    display: inline-block;
+}
+.header .leimu1 div:first-child{
+	width: .8rem;
+	height: .8rem;
+	float: left;
+	margin-left: .4rem;
+	margin-top: 0.4rem;
+	box-sizing:border-box;
+	display: inline-block;
+	background-image: url(../img/zjj-return1.png);
+	background-size: 0.53rem 0.53rem;
+	background-position: 0 0;
+	background-repeat: no-repeat;
+
+}
+.header .leimu1 div:first-child > a{
+	float:left;
+	width:100%;
+	height:100%;
+}
+.header .leimu1 div:nth-child(2){
+	width: 1.5rem;
+	height: .8rem;
+	float: left;
+	margin: 0 auto;
+	margin-left: 2rem;
+	margin-top: 0.4rem;
+	display: inline-block;
+	box-sizing:border-box;
+}
+.header .leimu1 div:nth-child(2) h3{
+	color: #fff;
+	font-size: 18px;
+	margin-top: -0.05rem;
+}
+.header .leimu1 div:nth-child(2) h4{
+	color: #ACACAD;
+	font-size: 16px;
+	margin-left: -0.25rem;
+}
+.header .leimu1 div span{
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	line-height: 1.2rem;
+	color: #B7B7B7;
+}
+.header .leimu1 div:last-child{
+	width: 1.4rem;
+	height: .8rem;
+	float: right;
+	margin-right: .4rem;
+	margin-top: 0.4rem;
+	display: inline-block;
+	background-position: 20px 2px;
+	background-size: 0.9rem 0.52rem;
+	background-repeat: no-repeat;
+	text-align: center;
+	color: #656565;
+	padding-top: 0.22rem;
+	box-sizing:border-box;
+}
+.header .tiao{
+	width: 100%;
+	height: 0.1rem;
+	background: rgba(0,0,0,0.6);
+	margin-top: 1.2rem;
+	z-index: 199;
+}
+.header .classify{
+	width: 100%;
+	height: auto;
+	padding: 0 0.54rem;
+	position: relative;
+	background: #fff;
+	z-index: 200;
+	box-sizing:border-box;
+	/*margin-top: -0.5rem;*/
+}
+.type{
+	width: 20%;
+	height: 1.2rem;
+	float: left;
+	padding-left: .5rem;
+	padding-top: .14rem;
+}
+.type > span{
+	font-size: .22rem;
+	font-weight: bold;
+	color: #a8a8a8;
+	font-family: "San Francisco Displa";
+	display: block;
+	height: .22rem;
+}
+.type > p:first-of-type{
+	font-size: .22rem;
+	font-weight: bold;
+	color: #767676;
+	font-family: "San Francisco Displa";
+}
+.type > img{
+	width: .65rem;
+	display: block;
+}
+.type > p:last-of-type{
+	font-size: .28rem;
+	font-weight: bold;
+	color: #626262;
+	font-family: "San Francisco Displa";
+	float: left;
+}
+.type > div{
+	width: .06rem;
+	height: .06rem;
+	border-radius: 50%;
+	margin-left: .08rem;
+	margin-top: .19rem;
+	background: #6bc8fa;
+	float: left;
+}
+.type + img{
+	width: .27rem;
+	height: 1.12rem;
+	float: left;
+}
+.header .classify .c-box{
+	width: 6.6rem;
+	height: 1.12rem;
+	margin: 0 auto;
+	/*background: red;*/
+}
+/*.header .classify .lei{
+	float: left;
+	width: 25%;
+	height: auto;
+}
+.header .classify .lei:nth-child(1){
+	width: 30%;
+	height: auto;
+}
+.header .classify .lei:nth-child(2){
+	width: 30%;
+	height: auto;
+}
+.header .classify .lei span{
+	display: block;
+}
+
+.header .classify .lei span:nth-child(1){
+	font-size: 12px;
+	color: #A8A8A8;
+}
+.header .classify .lei span:nth-child(2){
+	font-size: 12px;
+	color: #767676;
+}
+.header .classify .lei span:nth-child(3){
+	font-size: 12px;
+	color: #A8A8A8;
+	margin-top: -0.1rem;
+}
+.header .classify .lei span:nth-child(4){
+	font-size: 18px;
+	color: #555;
+}
+
+.header .classify .lei span i{
+	
+
+	color: red;
+}*/
+.header .classify .sort{
+	width: 0.5rem;
+	height: 0.5rem;
+	position: absolute;
+	right: 0.3rem;
+	top: 0.6rem;
+	background: url(../img/zjj-sort.png) no-repeat center center/0.38rem 0.38rem;
+}
+.header .line-box{
+	margin-top: 0.5rem;
+	margin-left: 0.48rem;
+	width: 6.68rem;
+	height: 0.05rem;
+	/*background: #fff;*/
+	z-index: 200;
+	/*box-sizing:border-box;*/
+	position: relative;
+}
+.header .line{
+	width: 6.5rem;
+	height: 0.03rem;
+	background: #BDBDBD;
+	margin: 0 auto;
+	float: left;
+	position: absolute;
+	top: -0.06rem;
+	left: 0.1rem;
+}
+.header .line-box .ldian{
+	width: 0.1rem;
+	height: 0.1rem;
+	background: #A2A2A2;
+	border-radius: 50%;
+	position: absolute;
+	top: -0.09rem;
+	left: 0;
+}
+.header .line-box .rdian{
+	width: 0.1rem;
+	height: 0.1rem;
+	background:#A2A2A2;
+	border-radius: 50%;
+	position: absolute;
+	top: -0.09rem;
+	right: 0;
+}
+/*顶部结束*/
+
+
+/*商品展示区开始*/
+#wrapper{
+	width: 100%;
+	height: 100%;
+	/*margin-bottom: 1.8rem;*/
+}
+.shop{
+	width: 100%;
+	height: auto;
+	padding: 0.25rem 0.48rem;
+	box-sizing:border-box;
+	position: absolute;
+	top: 3rem;
+	left: 0;
+	/*margin-bottom: 0.2rem;*/
+}
+.shop .shop-left{
+	width: 48%;
+	height: auto;
+	padding: 5px 0;
+	float: left;
+	/*background: red;*/
+}
+.shop .shop-left .shirtl{
+	width: 100%;
+	height: 4.96rem;
+	border-radius: 0.05rem;
+	box-shadow: -0.08rem -0.08rem 0.3rem #ccc;
+	margin-bottom: 0.2rem;
+	box-sizing:border-box;
+	position: relative;
+}
+.shop .shop-left .shirtl a{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.shop .shop-left .shirtl a img{
+	display: block;
+	width: 2.62rem;
+	height: 3.3rem;
+	margin: 0 auto;
+/*	margin-top: -0.4rem;*/
+}
+.shop .shop-left .shirtl a h3{
+	text-align: center;
+	color: #525252;
+	font-size: 18px;
+	margin-top: 0.2rem;
+}
+.shop .shop-left .shirtl a h4{
+	text-align: center;
+	color: #525252;
+	font-size: 14px;
+	font-weight: bold;
+}
+.shop .shop-left .shirtl a h4 span{
+	color: #525252;
+	font-size: 14px;
+	font-weight: normal;
+}
+.shop .shop-left .shirtl a .price{
+	color: #F72950;
+	font-size: 12px;
+	padding-left: 0.2rem;
+	padding-top: 0.25rem;
+	display: inline-block;
+	width: 30%;
+	line-height: 0.18rem;
+	float: left;
+}
+.shop .shop-left .shirtl a .price b{
+	color: #F72950;
+	font-size: 16px; 
+	line-height: 0.18rem;
+}
+.shop .shop-left .shirtl a .zan{
+	display: inline-block;
+	width: 0.38rem;
+	height: 0.38rem;
+	background: url(../img/zjj-zan.png) no-repeat center center/0.38rem 0.38rem;
+	float: right;
+	margin-right: 0.3rem;
+	padding-top: 0.25rem;
+}
+.shop .shop-left .shirtl a  #count{
+	width: 0.74rem;
+	height: 0.46rem;
+	position: absolute;
+	top: 0.15rem;
+	right: 0.15rem;
+}
+
+.shop .shop-right{
+	width: 48%;
+	height: 1080px;
+	padding: 5px 0 150px;
+	float: right;
+	/*background: blue;*/
+}
+.shop .shop-right .shirtr{
+	width: 100%;
+	height: 4.08rem;
+	border-radius: 0.05rem;
+	box-shadow: -0.08rem -0.08rem 0.3rem #ccc;
+	margin-bottom: 0.2rem;
+	box-sizing:border-box;
+	position: relative;
+}
+
+.shop .shop-right .shirtr a{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.shop .shop-right .shirtr a img{
+	display: block;
+	width: 2.62rem;
+	height: 2.48rem;
+	margin: 0 auto;
+/*	margin-top: -0.4rem;*/
+}
+.shop .shop-right .shirtr:nth-child(1) a img{
+	display: block;
+	width: 2.62rem;
+	height: 2.48rem;
+	margin: 0 auto;
+/*	margin-top: -0.4rem;*/
+}
+.shop .shop-right .shirtr:nth-child(2){
+	width: 100%;
+	height: 4.96rem;
+	border-radius: 0.05rem;
+	box-shadow: -0.08rem -0.08rem 0.3rem #ccc;
+	margin-bottom: 0.2rem;
+	box-sizing:border-box;
+}
+.shop .shop-right .shirtr:nth-child(2) a img{
+	display: block;
+	width: 2.62rem;
+	height: 3.30rem;
+	margin: 0 auto;
+}
+.shop .shop-right .shirtr:nth-child(3){
+	width: 100%;
+	height: 4.96rem;
+	border-radius: 0.05rem;
+	box-shadow: -0.08rem -0.08rem 0.3rem #ccc;
+	margin-bottom: 0.2rem;
+	box-sizing:border-box;
+}
+.shop .shop-right .shirtr:nth-child(3) a img{
+	display: block;
+	width: 2.62rem;
+	height: 3.30rem;
+	margin: 0 auto;
+}
+.shop .shop-right .shirtr a h3{
+	text-align: center;
+	color: #525252;
+	font-size: 18px;
+	margin-top: 0.2rem;
+}
+.shop .shop-right .shirtr a h4{
+	text-align: center;
+	color: #525252;
+	font-size: 14px;
+	font-weight: bold;
+}
+.shop .shop-right .shirtr a h4 span{
+	color: #525252;
+	font-size: 14px;
+	font-weight: normal;
+}
+.shop .shop-right .shirtr a .price{
+	color: #F72950;
+	font-size: 12px;
+	padding-left: 0.2rem;
+	padding-top: 0.25rem;
+	display: inline-block;
+	width: 30%;
+	line-height: 0.18rem;
+	float: left;
+}
+.shop .shop-right .shirtr a .price b{
+	color: #F72950;
+	font-size: 16px; 
+	line-height: 0.18rem;
+}
+.shop .shop-right .shirtr a .zan{
+	display: inline-block;
+	width: 0.38rem;
+	height: 0.38rem;
+	background: url(../img/zjj-zan.png) no-repeat center center/0.38rem 0.38rem;
+	float: right;
+	margin-right: 0.3rem;
+	padding-top: 0.25rem;
+}
+.shop .shop-right .shirtr a  #count{
+	width: 0.74rem;
+	height: 0.46rem;
+	position: absolute;
+	top: 0.15rem;
+	right: 0.15rem;
+}
+/*展示区结束*/
+

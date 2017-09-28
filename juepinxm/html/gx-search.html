@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<meta name="x5-orientation" content="portrait | landscape" />
+	<meta name="screen-orientation" content="portrait">
+	<meta name="x5-fullscreen" content="true" />
+	<meta name="full-screen" content="yes">
+	<meta name="format-detection" content="telephone=no, email=no" />
+	<script type="text/javascript" src="../js/jquery.js"></script>
+	<script type="text/javascript" src="../js/iscroll.js"></script>
+	<script src="../js/demoUtils.js"></script>
+	<link rel="stylesheet" href="../css/swiper.css"> 
+	<link rel="stylesheet" href="../css/gx-search.css"> 
+	<script type="text/javascript" src="../js/swiper.js"></script>
+	<script type="text/javascript" src="../js/gx-search.js"></script>
+	<script src="../js/rem.js"></script>
+    <title></title>
+</head>
+<style>
+#wrapper {
+	position: absolute;
+	z-index: 1;
+	top: 2.13rem;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	overflow: hidden;
+}
+
+	#scroller {
+	/*position: absolute;*/
+	z-index: 1;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-transform: translateZ(0);
+	-moz-transform: translateZ(0);
+	-ms-transform: translateZ(0);
+	-o-transform: translateZ(0);
+	transform: translateZ(0);
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-text-size-adjust: none;
+	-moz-text-size-adjust: none;
+	-ms-text-size-adjust: none;
+	-o-text-size-adjust: none;
+	text-size-adjust: none;
+	background: #fff;
+}
+	</style>
+<body onload="loaded()">
+	<!--顶部固定定位-->
+	<div class="search-header">
+		<div class="leimu1">
+			<div>
+				<a href="nxb-index.html"></a>
+			</div>
+			<div></div>
+			<div>
+				<a href="gx-searchRl.html"></a>
+			</div>
+		</div>
+	</div>
+	
+	<!--搜索框-->
+	<div class="search-sousuo">
+		<input type="" name="" id="" value="Search" />
+		<div class="dian1"></div>
+		<div class="xiangji"></div>
+		<div class="dian2"></div>
+		<div class="xuanze"></div>
+	</div>
+
+	<!--下拉-->
+	<ul class="xiala">
+		<a href="gx-searchRl.html"><li><p>推荐</p></li></a>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+	<!--选择列表-->
+	<div class="search-list">
+		<ul>
+			<li><p>上衣</p></li>
+			<li><p>茶具</p></li>
+			<li><p>家居</p></li>
+			<li><p>装饰</p></li>
+		</ul>
+	</div>
+<div id="wrapper">
+	<div id="scroller">
+	<!--轮播-->
+	<div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" style="background-image:url(../img/n-banner1.png);background-size: 280px;"></div>
+            <div class="swiper-slide" style="background-image:url(../img/n-banner2.png);background-size: 280px;"></div>
+            <div class="swiper-slide" style="background-image:url(../img/n-banner3.png);background-size: 280px;"></div>
+            <div class="swiper-slide" style="background-image:url(../img/n-banner4.png);background-size: 280px;"></div>
+            <div class="swiper-slide" style="background-image:url(../img/n-banner5.png);background-size: 280px;"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+    
+	<!--推荐-->
+	<div class="search-tuijian">
+		<div>
+			<span>&gt;</span>
+			<p>更多</p>
+		</div>
+	</div>
+	
+	<!--查看-->
+	<ul class="search-look">
+		<li><span>查看详情</span></li>
+		<li><span>查看详情</span></li>
+	</ul>
+
+
+	<!--设计师-->
+	<ul class="search-master">
+		<li>
+			<div class="touxiang"></div>
+			<p class="m1">Green</p>
+			<span class="m2">Professor</span>
+			<span class="m3">of</span>
+			<span class="m4">Design</span>
+			<span class="huo1"></span>
+			<span class="huo2"></span>
+			<span class="m5">你有你自己的生活方式你才是主流</span>
+			<span class="m6">The life style by new life in country</span>
+			<div class="yuan1"></div>
+			<span class="m7">1,7000</span>
+			<span class="m8">人已经关注</span>
+			<div class="yuan2"></div>
+			<span class="m9">3，5048</span>
+			<span class="m10">人已经订制</span>
+		</li>
+		<div></div>
+		<li>
+			<div class="touxiang"></div>
+			<p class="m1">Jacks</p>
+			<div class="dong">
+			<span class="m2">Professor</span>
+			<span class="m3">of</span>
+			<span class="m4">Design</span>
+			<span class="huo1"></span>
+			<span class="huo2"></span>
+			<span class="m5">你有你自己的生活方式你才是主流</span>
+			<span class="m6">The life style by new life in country</span>
+			<div class="yuan1"></div>
+			<span class="m7">1,7000</span>
+			<span class="m8">人已经关注</span>
+			<div class="yuan2"></div>
+			<span class="m9">3，5048</span>
+			<span class="m10">人已经订制</span>
+			</div>
+		</li>
+		
+	</ul>
+    </div>
+</div>
+	<!--底部固定定位-->
+	<!--<div class="che-don">
+		<ul>
+			<li><a href="nxb-index.html"></a></li>
+			<li><a href="nxb-trend.html"></a></li>
+			<li><a href="cr-hyq.html"></a></li>
+			<li><a href="gx-gouwuche.html"></a></li>
+			<li><a href="cr-grzx.html"></a></li>
+		</ul>
+	</div>-->
+</body>
+</html>
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        effect: 'coverflow',
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        coverflow: {
+            rotate: 50,
+            stretch: 0,
+            depth:100,
+            modifier: 1,
+            slideShadows : true
+        },
+        loop:true
+    });
+    
+    
+    
+    var myScroll;
+
+	function loaded () {
+		myScroll = new IScroll('#wrapper',{
+            scrollbars: true,
+            mouseWheel: true,
+            interactiveScrollbars: true,
+            shrinkScrollbars: 'scale',
+            fadeScrollbars: true
+		});
+	}
+    document.addEventListener('touchmove', function (e) { e.preventDefault(); }, isPassive() ? {
+        capture: false,
+        passive: false
+    } : false);
+    </script>
+	

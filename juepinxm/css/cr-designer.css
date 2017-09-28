@@ -1,0 +1,411 @@
+body.crdesigner {
+  background: #fff;
+  overflow: auto;
+}
+
+div.head {
+  width: 100%;
+  height: 2.77rem;
+  margin: 0 auto;
+  background-image: url(../img/cr-bg1.png);
+  position: relative;
+}
+
+.head .line {
+  width: 7.02rem;
+  height: 0.1rem;
+  margin: 0 auto;
+  background-image: url(../img/cr-top1.png);
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.head .top {
+  width: 7.02rem;
+  height: 0.88rem;
+  margin: 0 auto;
+}
+
+.head .top a {
+  float: left;
+}
+
+.head .top a img {
+  display: block;
+  height: 0.88rem;
+}
+
+.head .top a:nth-child(2) {
+  margin-left: 1.80rem;
+}
+
+.head .top a:nth-child(3) {
+  float: right;
+}
+
+.head > p {
+  width: 100%;
+  height: 0.42rem;
+  text-align: center;
+  color: #fff;
+  margin-top: 0.3rem;
+  line-height: 0.42rem;
+}
+
+.head > p > img {
+  height: 100%;
+}
+
+.head > .circle {
+  width: 1.9rem;
+  height: 1.9rem;
+  border-radius: 50%;
+  background-image: url(../img/cr-grzxtx1.png);
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 1.82rem;
+  left: 50%;
+  margin-left: -0.95rem;
+  overflow: hidden;
+}
+ .head > .circle> img{
+    position:absolute;
+    top:0;
+    left:0.32rem;
+    height:0.3rem;
+    width:0.52rem;
+}
+.head > .circle > .pic {
+  width: 1.15rem;
+  height: 1.15rem;
+  background-image: url(../img/cr-tpic.jpg);
+  background-size: 100%;
+  background-position: center;
+  border-radius: 50%;
+  margin: 0.37rem auto;
+}
+
+div.font {
+  width: 7.02rem;
+  height: 2.2rem;
+  margin: 0 auto;
+  padding-top: 0.88rem;
+  box-sizing: border-box;
+  position: relative;
+}
+
+div.font p {
+  width: 100%;
+  height: 0.3rem;
+  line-height: 0.3rem;
+  text-align: center;
+  font-size: 0.26rem;
+  color: #818181;
+}
+
+div.font > div.line {
+  width: 0.24rem;
+  height: 0.05rem;
+  margin: 0.1rem auto;
+  background-image: url(../img/cr-dline.png);
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+div.font div.font1 {
+  margin-top: 0.10rem;
+  height: 0.24rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+div.font div.font1 span {
+  font-size: 0.12rem;
+  color: #b1b1b1;
+  line-height: 0;
+  font-weight: normal;
+}
+
+div.font div.star {
+  margin-top: 0.10rem;
+  width: 100%;
+  height: 0.24rem;
+  text-align: center;
+}
+
+div.font div.star img {
+  height: 100%;
+}
+
+div.invite {
+  width: 3.80rem;
+  height: 0.72rem;
+  margin: 0 auto 0.2rem;
+  border-radius: 0.4rem;
+  position: relative;
+}
+
+div.invite img {
+  width: 100%;
+}
+
+div.invite p {
+  width: 3.80rem;
+  height: 0.72rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  line-height: 0.72rem;
+  color: #fff;
+  font-size: 0.32rem;
+}
+
+p.name {
+  width: 7.02rem;
+  height: 0.3rem;
+  font-size: 0.28rem;
+  margin: 0.1rem auto;
+  line-height: 0.3rem;
+  color: #484848;
+}
+
+div.maybe {
+  width: 7.02rem;
+  height: 0.7rem;
+  margin: 0 auto;
+}
+
+div.maybe > p {
+  float: left;
+  width: 70%;
+  height: 100%;
+  font-size: 0.2rem;
+  color: #828282;
+}
+
+div.maybe > div.focus {
+  float: right;
+  width: 0.94rem;
+  height: 0.7rem;
+  background-image: url(../img/cr-focus.png);
+  background-size: 100%;
+  background-position: center;
+}
+
+div.maybe > div.focus > p {
+  width: 0.82rem;
+  height: 100%;
+  font-size: 0.22rem;
+  line-height: 0.7rem;
+  text-align: center;
+  color: #898989;
+}
+
+div.letter {
+  width: 7.02rem;
+  height: 1rem;
+  margin: 0.1rem auto;
+}
+
+ul.hot {
+  width: 100%;
+  height: 50%;
+}
+
+ul.hot > li {
+  float: left;
+  width: 33.333%;
+  height: 100%;
+}
+
+ul.hot > li p {
+  width: 100%;
+  height: 100%;
+  font-size: 0.22rem;
+  text-align: center;
+  line-height: 0.5rem;
+  color: #898989;
+}
+
+div.letter > ul:nth-child(2) li p {
+  color: #484848;
+  font-weight: bold;
+}
+
+div.move {
+  width: 100%;
+  height: 1rem;
+  background-image: url(../img/cr-sjs_02.png);
+  background-position: center;
+  background-size: 100%;
+  position: relative;
+}
+
+div.move p {
+  width: 0.66rem;
+  height: 0.26rem;
+  float: left;
+  margin-left: 1.46rem;
+  font-size: 0.24rem;
+  text-align: center;
+  line-height: 0.26rem;
+  margin-top: 0.36rem;
+  color: #484848;
+  font-weight: bold;
+}
+
+div.move p:nth-of-type(2) {
+  margin-left: 3.18rem;
+}
+
+div.move img {
+  width: 0.66rem;
+  position: absolute;
+  bottom: 0.2rem;
+  left: 1.46rem;
+}
+
+div.right {
+  width: 1.43rem;
+  height: 13rem;
+  border-right: 0.01rem solid #E1E1E1;
+  float: left;
+  padding-left: 0.3rem;
+  box-sizing: border-box;
+}
+
+div.right div.circle1 {
+  width: 0.9rem;
+  height: 0.9rem;
+  border-radius: 50%;
+  background-image: url(../img/cr-tpic.jpg);
+  background-position: center;
+  background-size: 100%;
+  margin-top: 0.5rem;
+  box-shadow: 0 0 0.05rem 0.02rem #eaeaea;
+}
+
+div.right div.circle2 {
+  width: 0.9rem;
+  height: 0.9rem;
+  border-radius: 50%;
+  background-image: url(../img/cr-tpic.jpg);
+  background-position: center;
+  background-size: 100%;
+  margin-top: 5.5rem;
+  box-shadow: 0 0 0.05rem 0.02rem #eaeaea;
+}
+
+div.left {
+  width: 5.83rem;
+  height: 13rem;
+  float: left;
+  padding-left: 0.28rem;
+  box-sizing: border-box;
+}
+
+div.left div.first {
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+div.left p:first-child {
+  float: left;
+  height: 0.24rem;
+  font-size: 0.24rem;
+  line-height: 0.24rem;
+  color: #363636;
+  margin-bottom: 0.1rem;
+  font-weight: bold;
+}
+
+div.left p:nth-child(2) {
+  float: left;
+  height: 0.12rem;
+  font-size: 0.12rem;
+  color: #898989;
+  width: 100%;
+}
+
+div.left p:nth-child(2) b {
+  font-size: 0.12rem;
+  color: #363636;
+}
+
+div.left p:nth-child(2) span {
+  font-size: 0.12rem;
+  float: right;
+  margin-top: -0.02rem;
+  color: #898989;
+}
+
+div.left .first > img:first-of-type {
+  width: 100%;
+  margin-top: 0.5rem;
+  border-radius: 0.2rem;
+  box-shadow: 0 0 0.05rem 0.02rem #E6E6E6;
+}
+
+div.left p:nth-of-type(3) {
+  font-size: 0.2rem;
+  color: #2b2b2b;
+}
+
+div.left div.icon {
+  height: 0.36rem;
+  width: 100%;
+  margin-top: 0.05rem;
+}
+
+div.left div.icon div.good {
+  float: left;
+  height: 100%;
+}
+
+div.left div.icon div.good img {
+  float: left;
+  height: 100%;
+  margin-right: 0.05rem;
+}
+
+div.left div.icon div.good b {
+  float: left;
+  padding-top: 0.05rem;
+  box-sizing: border-box;
+  font-size: 0.14rem;
+  margin-right: 0.2rem;
+  line-height: 0.35rem;
+  color: #5C5B5B;
+}
+
+div.left div.icon div.three {
+  width: 0.36rem;
+  height: 0.36rem;
+  float: right;
+}
+
+div.left div.icon div.three img {
+  width: 0.36rem;
+}
+
+div.left div.line {
+  width: 100%;
+  height: 0;
+  border-top: 0.01rem solid #E9E9E9;
+  margin: 0.2rem auto;
+  position: relative;
+}
+
+div.left div.line div.squ {
+  position: absolute;
+  left: 0;
+  top: -0.03rem;
+  background: #3297CD;
+  width: 0.48rem;
+  height: 0.05rem;
+}

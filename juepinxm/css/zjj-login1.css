@@ -1,0 +1,347 @@
+@import url("common.css");
+
+body{
+	background: url("../img/zjj-bg.png") no-repeat;
+	background-size:cover;
+	background-position:center;
+	height:13.34rem; 
+}
+*{
+	font-family: "微软雅黑";
+}
+/*顶部开始*/
+.header{
+	width: 100%;
+	height:auto;
+	float: left;
+	position: fixed;
+}
+.header .leimu1{
+	width: 100%;
+	height: auto;
+	float: left;
+	text-align: justify;
+}
+.header .leimu1:after{
+	content: "";
+    width: 100%;
+    display: inline-block;
+}
+.header .leimu1 div{
+	width: .8rem;
+	height: .8rem;
+	float: left;
+	margin-left: .4rem;
+	margin-top: 0.28rem;
+	box-sizing:border-box;
+	display: inline-block;
+}
+.header .leimu1 div a{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.header .leimu1 div:first-child a{
+	background-image: url(../img/zjj-return.png);
+	background-size: 0.53rem 0.53rem;
+	background-position: 0 0;
+	background-repeat: no-repeat;
+
+}
+.header .leimu1 div:nth-child(2){
+	width: 3.00rem;
+	height: .8rem;
+	float: left;
+	margin-left: 1rem;
+	margin-top: 0.28rem;
+	display: inline-block;
+}
+.header .leimu1 div span{
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	line-height: 1.2rem;
+	color: #B7B7B7;
+}
+.header .leimu1 div:last-child{
+	width: 1.4rem;
+	height: .8rem;
+	float: right;
+	margin-right: .4rem;
+	margin-top: 0.29rem;
+	display: inline-block;
+	box-sizing:border-box;
+}
+.header .leimu1 div:last-child a{
+	background-image: url(../img/zjj-zhuce.png);
+	background-position: 20px 2px;
+	background-size: 0.9rem 0.52rem;
+	background-repeat: no-repeat;
+	text-align: center;
+	color: #656565;
+	padding-top: 0.22rem;
+}
+.header .logo{
+	width: 1.43rem;
+	height: 0.94rem;
+	margin: 0 auto;
+	background: red;
+	margin-top: 3.06rem;
+	background: url(../img/zjj-logo.png) no-repeat center center/1.43rem 0.94rem;
+
+}
+/*顶部结束*/
+
+
+.box{
+	width: 6.53rem;
+	height: auto;
+	position: absolute;
+	top: 4.4rem;
+	left: 0.46rem;
+	margin-bottom: 0.8rem;
+}
+/*登录框开始*/
+.login-box{
+	width: 6.53rem;
+	height: 2.85rem;
+	border: 1px solid #69DEC8;
+	border-radius: 20px;
+	box-sizing:border-box;
+	background: #fff;
+}
+.login-box #loginform{
+	width: 100%;
+	height: 100%;
+	padding: 0.3rem 0.22rem;
+	box-sizing:border-box;
+	overflow: hidden;
+}
+.login-box #loginform:after{
+	content: "";
+	display: inline-block;
+}
+.login-box #loginform .user{
+	width: 6.05rem;
+	height: 1.14rem;
+	line-height: 1.14rem; 
+	padding-left: 0.1rem;
+	font-size: 16px;
+	color: #999;
+}
+.login-box #loginform .user .yuan1,.yuan2{
+	width: 0.1rem;
+	height: 0.1rem;
+	border-radius: 50%;
+	background: #40A7FF;
+	float: left;
+	margin-right: 0.05rem;
+	margin-top: 0.5rem;
+}
+.login-box #loginform .user .yuan2{
+	background: #32EDA9;
+}
+.login-box #loginform .user input{
+	width: 4.05rem;
+	height: 1.14rem;
+	float: right;
+	background: url(../img/zjj-user.png) no-repeat  3rem 0.25rem/0.64rem 0.64rem;
+	font-size: 12px;
+	border: none;
+	outline: none;
+}
+.login-box #loginform .user input[type="password"]{
+	background: url(../img/zjj-pass.png) no-repeat 3rem 0.25rem/0.64rem 0.64rem;
+}
+.login-box #loginform .line-box{
+	width: 6.0rem;
+	height: 0.1rem;
+	/*box-sizing:border-box;*/
+	position: relative;
+}
+.login-box #loginform .line{
+	width: 6.0rem;
+	height: 0.01rem;
+	background: url(../img/zjj-line.png) no-repeat;
+	float: left;
+}
+.login-box #loginform .line-box .ldian{
+	width: 0.1rem;
+	height: 0.1rem;
+	background: #A2A2A2;
+	border-radius: 50%;
+	position: absolute;
+	top: -0.05rem;
+	left: 0;
+}
+.login-box #loginform .line-box .rdian{
+	width: 0.1rem;
+	height: 0.1rem;
+	background:#A2A2A2;
+	border-radius: 50%;
+	position: absolute;
+	top: -0.05rem;
+	right: 0;
+}
+/*登录框结束*/
+
+/*是否记住密码开始*/
+.remember{
+	width: 100%;
+	height: 0.58rem;
+	padding: 0.1rem 0.05rem;
+
+}
+.remember .dian{
+	width: 0.05rem;
+	height: 0.05rem;
+	border-radius: 50%;
+	background: #fff;
+	float: left;
+	margin-top: 0.25rem;
+}
+.remember span{
+	display: inline-block;
+	color: #3292CF;
+	font-size: 18px;
+	float: left;
+	padding-left: 0.05rem;
+	line-height: 0.58rem;
+}
+.remember .select{
+	width: 1.02rem;
+	height: 0.39rem;
+	border: 1px solid #ABABAB;
+	float: left;
+	margin: 0.1rem;
+	border-radius: 30px;
+	line-height: 0.39rem;
+}
+.remember .select .button{
+	width: 0.3rem;
+	height: 0.3rem;
+	margin: 0.05rem 0.06rem;
+	background: url(../img/zjj-button.png) no-repeat center center/0.3rem 0.3rem;
+}
+.remember  .reright{
+	float: right;
+	line-height: 0.58rem;
+	font-size: 18px;
+	color: #3292CF;
+}
+/*是否记住密码结束*/
+.box #gou{
+	display: block;
+	width: 3.05rem;
+	height: 1.06rem;
+	position: absolute;
+	left: 50%;
+	margin-left: -1.52rem;
+	margin-top: 0.6rem;
+}
+.box .login{
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0) url(../img/zjj-login.png) no-repeat center center/3.26rem 1.26rem;
+	outline: none;
+	border:none;
+}
+.box .otherway{
+	width: 5.2rem;
+	height: 2.2rem;
+	margin: 2.2rem auto;
+}
+.box .otherway .othtitle{
+	width: 100%;
+	height: 0.58rem;
+	float: left;
+	position: relative;
+	text-align: bottom;
+}
+
+.box .otherway .othtitle .title2 .hline{
+	width: 1rem;
+	height: 0.01rem;
+	background: #fff;
+	float: left;
+}
+.box .otherway .othtitle .title2 .hline:nth-child(2){
+	width: 1rem;
+	height: 0.01rem;
+	background: #fff;
+	float: right;
+}
+.box .otherway .othtitle .title1,.title2{
+	width: 100%;
+	height: auto;
+	float: left;
+	text-align: center;
+	margin-bottom: 0.03rem;
+}
+.box .otherway .othtitle .title1 h5{
+	width: 100%;
+	height: 0.4rem;
+	/*float: left;*/
+	text-align: center;
+	font-size: 18px;
+	color: #3292CF;
+}
+.box .otherway .othtitle .title2 h6{
+	text-align: center;
+	width: 5rem;
+	display: inline-block;
+	margin: 0 auto;
+	/*margin: 0 0.03rem;*/
+	box-sizing:border-box;
+	font-size: 14px;
+	color: #68A8D1;
+	/*float: left;*/
+}
+.box .ways{
+	width: 100%;
+	height: 1.6rem;
+	float: left;
+	margin: 0 auto;
+	text-align: justify;
+}
+.box .ways:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.box .ways div{
+	float: left;
+	width: 1.2rem;
+	height: 1.2rem;
+	display: block;
+	margin-right: 0.5rem;
+	
+	box-sizing: border-box;
+	display: inline-block;
+}
+.box .ways div:nth-child(1){
+	margin-left:-0.25rem; 
+}
+.box .ways div img{
+	/*display: inline-block;*/
+	width: 1.2rem;
+	height: 1.2rem;
+	margin-left: 0.6rem;
+	margin-top: 0.3rem;
+
+}
+/*登录框结束*/
+
+b{	
+	display: block;
+	width: 4.8rem;
+	height: 0.6rem;
+	line-height: 0.6rem;
+	font-size:12px;
+	position: absolute;
+	top:0rem;
+	font-weight:normal;
+	left: 0.8rem;
+	/*background: red;*/
+}

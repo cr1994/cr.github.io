@@ -1,0 +1,364 @@
+@import url("common.css");
+body{
+	overflow: auto;
+	background: white;
+}
+/*开头固定定位*/
+.success-header{
+	width: 100%;
+	height:auto;
+	float: left;
+	position: fixed;
+	background-image: url(../img/n-bg.png);
+	z-index: 1000;
+}
+.success-header .leimu1{
+	width: 100%;
+	height: auto;
+	float: left;
+	text-align: justify;
+}
+.success-header .leimu1:after{
+	content: "";
+    width: 100%;
+    display: inline-block;
+}
+.success-header .leimu1 div:first-child{
+	width: .7rem;
+	height: .7rem;
+	float: left;
+	margin-left: .4rem;
+	margin-top: .58rem;
+	display: inline-block;
+	background-image: url(../img/gx-search_102.png);
+	background-position: -13px -11px;
+	background-size: 51px;
+	background-repeat: no-repeat;
+}
+
+.success-header .leimu1 div:nth-child(2){
+	width: 2.06rem;
+	height: .9rem;
+	float: left;
+	margin-left: 1.7rem;
+	margin-top: .55rem;
+	display: inline-block;
+	position: relative;
+	background-image: url(../img/gx-success.png);
+	background-repeat: no-repeat;
+	background-size: 100px;
+}
+.success-header .leimu1 div:last-child{
+	width: 1.4rem;
+	height: .8rem;
+	float: right;
+	margin-right: .4rem;
+	margin-top: .5rem;
+	display: inline-block;
+	background-image: url(../img/xx-payc01.png);
+	background-position: 11px 1px;
+	background-size: 55px;
+	background-repeat: no-repeat;
+}
+.success-header .leimu2{
+	width: 100%;
+	height: auto;
+	float: left;
+}
+.success-header .leimu2 .kuang{
+	width: 3.84rem;
+	height: .9rem;
+	margin: 0 auto;
+	margin-bottom: .3rem;
+	background-image: url(../img/xx-good.png);
+	background-position: -1px 1px;
+	background-size: 194px;
+	position: relative;
+	background-repeat: no-repeat;
+}
+.mask{
+	position: absolute; 
+	top: 0px; 
+	/*filter: alpha(opacity=20);*/ 
+	background-color: #777;
+	z-index: 1002; 
+	left: 0px;
+	opacity: .5;
+}
+.dianyi{
+	width: 65px;
+	height: 44px;
+	display: block;
+	position: absolute; 
+	top:.45rem;
+	right:.45rem;
+	z-index: 99999999;
+}
+.share{
+	display: none;
+	width: 6rem;
+	height: 3rem;
+	background:white;
+	position: absolute;
+	top: 5rem;
+	left: .77rem;
+	border-radius: 10px;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	z-index: 9999;
+	overflow: hidden;
+}
+.share div:first-child{
+	width: 20%;
+	height: 3.2rem;
+	background-image: url(../img/gx-share.png);
+	background-repeat: no-repeat;
+	background-size: 70px;
+	position: fixed;
+	left: 41%;
+	overflow: hidden;
+	margin-top: -15px;
+}
+.share div:nth-child(2){
+	width: 1.4rem;
+	height: 1.4rem;
+	background-image: url(../img/xx-payc03.png);
+	background-repeat: no-repeat;
+	background-size: 70px;
+	margin-left: 35px;
+	margin-top: 20px;
+}
+.share div:nth-child(3){
+	width: 4.4rem;
+	height: 1.4rem;
+	background-image: url(../img/gx-caizi.png);
+	background-repeat: no-repeat;
+	background-size: 141px;
+	margin-left: 110px;
+	margin-top: -53px;
+}
+.share div:nth-child(4){
+	width: 80%;
+	height: .1rem;
+	background-image: url(../img/gx-sharexian.png);
+	background-repeat: no-repeat;
+	background-size: 5rem;
+	margin-left: 26px;
+	margin-top: -11px;
+}
+.share div:nth-child(5){
+	width: 20%;
+	height: 1rem;
+	background-image: url(../img/gx-shareQQ.png);
+	background-repeat: no-repeat;
+	background-size: 0.8rem;
+	margin-left: 36px;
+	margin-top: 2px;
+}
+.share div:nth-child(6){
+	width: 20%;
+	height: 1rem;
+	background-image: url(../img/gx-weixin.png);
+	background-repeat: no-repeat;
+	background-size: 0.8rem;
+	margin-left: 110px;
+	margin-top: -50px;
+}
+.share div:nth-child(7){
+	width:20%;
+	height: 1rem;
+	background-image: url(../img/gx-sharemore.png);
+	background-repeat: no-repeat;
+	background-size: 0.8rem;
+	margin-left: 4.5rem;
+	margin-top: -41px;
+}
+.share div:nth-child(8){
+	width:20%;
+	height: 1rem;
+	background-image: url(../img/cr-yhq55.png);
+	background-repeat: no-repeat;
+	background-size: 0.4rem;
+	margin-left: 5.4rem;
+	margin-top: -3.1rem;
+}
+.success-neirong{
+	position: absolute;
+	top: 3.2rem;
+	width: 100%;
+	height: 100px;
+}
+.success-neirong .neiRong{
+	width: 85%;
+	height:8.8rem;
+	margin: 0 auto;
+	border:2px solid #3393CF;
+	box-sizing: border-box;
+	margin-bottom: 1rem;
+}
+.success-neirong .neiRong div:first-child{
+	width: 1.5rem;
+	height: 1.5rem;
+	margin: 0 auto;
+	background-image: url(../img/xx-payc02.png);
+	background-size:63px;
+	background-repeat: no-repeat;
+	background-position: 8px 0px;
+	margin-top: .2rem;
+}
+.success-neirong .neiRong p{
+	font-size: 20px;
+	width: 100%;
+	text-align: center;
+	font-family: "苹方";
+	padding-left: 10px;
+}
+.success-neirong .neiRong .word{
+	width: 5.5rem;
+	height: 0.5rem;
+	margin: 0 auto;
+	background-image: url(../img/xx-payb04.png);
+	background-size:168px;
+	background-repeat: no-repeat;
+	background-position: 54px 0px;
+	/*margin-top: .2rem;*/
+}
+.success-neirong .neiRong .jiage{
+	width: 2rem;
+	height: .5rem;
+	display: block;
+	margin: 0 auto;
+	color: #0795DA;
+	font-size: 30px;
+	margin-top: .3rem;
+}
+.success-neirong .neiRong .biao{
+	width: 1rem;
+	height: .5rem;
+	display: block;
+	margin: 0 auto;
+	color: #0795DA;
+	font-size: 16px;
+	margin-top: .18rem;
+}
+.success-neirong .neiRong .bianhao{
+	font-size: 12px;
+	color: #9FA6AE;
+	text-align: center;
+	font-family: "苹方";
+	width: 4rem;
+	height: .5rem;
+	display: block;
+	margin: 0 auto;
+	/*margin-top: .18rem;*/
+}
+.success-neirong .neiRong .xiaotu{
+	width: .8rem;
+	height: .8rem;
+	background-image: url(../img/xx-payc03.png);
+	background-size:40px;
+	background-repeat: no-repeat;
+	/*background-position: 8px 0px;*/
+	margin-top: .5rem;
+	margin-left: .5rem;
+	float: left;
+}
+.success-neirong .neiRong .lijuan{
+	font-size: 12px;
+	color: #9FA6AE;
+	text-align: center;
+	font-family: "苹方";
+	width: 4rem;
+	height: .5rem;
+	display: block;
+	margin-top: .8rem;
+	margin-left: .6rem;
+}
+.success-neirong .neiRong .juan{
+	width: 100%;
+	height: 25%;
+	background-image: url(../img/xx-payc_14.png);
+	background-size:260px;
+	background-repeat: no-repeat;
+	/*background-position: 8px 0px;*/
+	margin-top: .2rem;
+	margin-left: .5rem;
+}
+.xian{
+	width: 94%;
+	border-bottom: 1px solid #E8E8E8;
+	position: absolute;
+	top: 8.2rem;
+	left: .2rem;
+	margin: 0 auto;
+}
+/*底部固定定位*/
+/*.success-don{
+	width: 100%;
+	height: .94rem;
+	background: #323840;
+	position: fixed;
+	bottom: 0;
+}
+.success-don >ul{
+	width: 100%;
+	height: .94rem;
+	display: flex;
+}
+.success-don> ul> li {
+	display: block;
+	text-align: center;
+	height: 100%;
+	width: 20%;
+}
+.success-don >ul >li>a{
+	display: block;
+	width:.88rem;
+	height: .94rem;
+	margin: 0 auto
+}
+.success-don >ul >li:nth-child(1)>a{
+	background: url(../img/gx-fix_03.png);
+	background-size: 100%;
+}
+.success-don >ul >li:nth-child(2)>a{
+	background: url(../img/gx-fix_78.png);
+	background-size: 100%;
+}
+.success-don >ul >li:nth-child(3)>a{
+	background: url(../img/gx-fix_80.png);
+	background-size: 100%;
+}
+.success-don >ul >li:nth-child(4)>a{
+	background: url(../img/gx-fix_83.png);
+	background-size: 100%;
+}
+.success-don >ul >li:nth-child(5)>a{
+	background: url(../img/gx-fix_85.png);
+	background-size: 100%;
+}*/
+
+/*返回首页*/
+.success-back{
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 1rem;
+	background-image: url(../img/cr-sjyq_03.png);
+	background-repeat: no-repeat;
+	background-size:200px;
+	background-position: 90px 0px;
+}
+.success-back span{
+	font-size: 18px;
+	width: 2rem;
+	text-align: center;
+	display: block;
+	margin-left: 38%;
+	margin-top: 6px;
+	color: white;
+}
+.success-back span >a{
+	font-size: 18px;
+	color: white;
+}

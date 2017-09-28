@@ -1,0 +1,187 @@
+body.spgz {
+  background: #F1EFEF;
+  overflow: auto;
+}
+
+div.head {
+  width: 100%;
+  height: 1.20rem;
+  margin: 0 auto;
+  background-image: url(../img/cr-bg1.png);
+  position: relative;
+}
+
+.head .line {
+  width: 7.02rem;
+  height: 0.1rem;
+  margin: 0 auto;
+  background-image: url(../img/cr-top1.png);
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.head .top {
+  padding-top: 0.11rem;
+  box-sizing: border-box;
+  width: 7.02rem;
+  height: 0.88rem;
+  margin: 0 auto;
+}
+
+.head .top a {
+  float: left;
+}
+
+.head .top a img {
+  display: block;
+  height: 0.66rem;
+}
+
+.head .top a:first-child img {
+  width: 0.66rem;
+  height: auto;
+  margin-top: 0.10rem;
+}
+
+.head .top a:nth-child(2) {
+  margin-left: 1.70rem;
+}
+
+.head .top a:nth-child(3) {
+  float: right;
+  margin-right:-0.18rem;
+}
+
+div.list {
+  width: 7.02rem;
+  height: auto;
+  background: #fff;
+  margin: 0.2rem auto;
+}
+
+div.list > div.show {
+  width: 100%;
+  height: 1.75rem;
+  padding-top: 0.4rem;
+  box-sizing: border-box;
+  position: relative;
+}
+
+div.list > div.show .pic {
+  width: 1.38rem;
+  height: 100%;
+  float: left;
+}
+
+div.list > div.show .pic img {
+  height: 100%;
+  margin-left: 0.05rem;
+  margin-top: -0.1rem;
+}
+
+div.list > div.show .font {
+  width: 4.14rem;
+  height: 100%;
+  float: left;
+}
+
+div.list > div.show .font p {
+  font-size: 0.30rem;
+  letter-spacing: 0.02rem;
+}
+
+div.list > div.show .font p b {
+  font-size: 0.30rem;
+  letter-spacing: 0.02rem;
+}
+
+div.list > div.show .font div.star {
+  height: 0.14rem;
+  line-height: 0.14rem;
+}
+
+div.list > div.show .font div.star img {
+  height: 100%;
+  margin-right: -0.05rem;
+}
+
+div.list > div.show .font div.label {
+  width: 100%;
+  height: 0.30rem;
+  background: #fff;
+  margin-top: 0.2rem;
+}
+
+div.list > div.show .font div.label div.detail {
+  width: 20%;
+  height: 100%;
+  float: left;
+  margin-right: 0.05rem;
+  position: relative;
+}
+
+div.list > div.show .font div.label div.detail img {
+  width: 0.75rem;
+}
+
+div.list > div.show .font div.label div.detail p {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  line-height: 0.32rem;
+  font-size: 0.12rem;
+  color: #7E8691;
+}
+
+div.list > div.show .font div.label div.detail:nth-child(4) img {
+  width: auto;
+  height: 100%;
+}
+
+div.list > div.show .price {
+  float: right;
+  width: 1.5rem;
+  height: 100%;
+  padding-right: 0.1rem;
+  box-sizing: border-box;
+}
+
+div.list > div.show .price p:first-child {
+  width: 100%;
+  font-size: 0.3rem;
+  color: #FF2D4B;
+  text-align: right;
+  font-weight: bold;
+}
+
+div.list > div.show .price p:nth-child(2) {
+  width: 100%;
+  font-size: 0.2rem;
+  color: #FF2D4B;
+  text-align: right;
+  margin-top: 0.05rem;
+  font-weight: bold;
+}
+
+div.list > div.show .price p:nth-child(3) {
+  width: 0.92rem;
+  height: 0.34rem;
+  margin-left: 0.5rem;
+  background-image: url(../img/cr-spqx.png);
+  background-position: center;
+  background-size: 100%;
+}
+
+div.list > div.show .line {
+  width: 100%;
+  height: 0.1rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-image: url(../img/cr-spgz3.png);
+  background-position: center;
+  background-size: 100%;
+}

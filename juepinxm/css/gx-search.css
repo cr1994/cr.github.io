@@ -1,0 +1,544 @@
+@import url("common.css");
+/*开头固定定位*/
+body{
+	overflow: hidden;
+	background: white;
+}
+.search-header{
+	width: 100%;
+	height:3.4rem;
+	float: left;
+	position: absolute;
+	top:0;
+	left:0;
+	background: #282828;
+	z-index: 10;
+}
+.search-header .leimu1{
+	width: 100%;
+	height: 1.76rem;
+	float: left;
+	text-align: justify;
+	background-image: url(../img/n-bg.png);
+}
+.search-header .leimu1:after{
+	content: "";
+    width: 100%;
+    display: inline-block;
+}
+.search-header .leimu1 div:first-child{
+	width: .8rem;
+	height: .8rem;
+	float: left;
+	margin-left: .4rem;
+	margin-top: .45rem;
+	display: inline-block;
+	background-image: url(../img/gx-search_102.png);
+	background-position: -13px -10px;
+	background-size: 55px;
+	background-repeat: no-repeat;
+}
+.search-header .leimu1 div:first-child > a,.search-header .leimu1 div:nth-child(3) > a{
+	float:left;
+	width:100%;
+	height:100%;
+}
+.search-header .leimu1 div:nth-child(2){
+	width: 2.06rem;
+	height: .9rem;
+	float: left;
+	margin-left: 1.5rem;
+	margin-top: .45rem;
+	display: inline-block;
+	position: relative;
+	background-image: url(../img/gx-chaoliuguan.png);
+	background-repeat: no-repeat;
+	background-size: 100px;
+}
+.search-header .leimu1 div:last-child{
+	width: 1.4rem;
+	height: .8rem;
+	float: right;
+	margin-right: .4rem;
+	margin-top: .45rem;
+	display: inline-block;
+	background-image: url(../img/n-search.png);
+	background-position: 1px -11px;
+	background-size: 80px;
+	background-repeat: no-repeat;
+}
+
+/*搜索框*/
+.search-sousuo{
+	width: 4.7rem;
+	height: 1rem;
+	float: left;
+	position: absolute;
+	left: 75px;
+	top: 47px;
+	z-index: 100;
+}
+.search-sousuo input{
+	width: 4.5rem;
+	height: .85rem;
+	display: block;
+	margin-top: .4rem;
+	margin-left:-.3rem;
+	border:0px ;
+	border-radius: 5px;	
+	font-size: 12px;
+	color:#D4D4D4;
+	padding-left: 25px;
+	float: left;
+	background: #F6F6F6;
+}
+.search-sousuo .dian1{
+	width: .1rem;
+	height: .1rem;
+	background: #3477FF;
+	border-radius: 50%;
+	position: absolute;
+	left: -5px;
+	top: 39px;
+}
+.search-sousuo .xiangji{
+	position: absolute;
+	right:50px;
+	top:26px;
+	background-image: url(../img/gx-search_03.png);
+	background-size: 48px;
+	background-repeat: no-repeat;
+	width: .89rem;
+	height: .6rem;
+}
+.search-sousuo .dian2{
+	width: .1rem;
+	height: .1rem;
+	background: #FC2049;
+	border-radius: 50%;
+	position: absolute;
+	right: 53px;
+	top: 29px;
+	z-index: 100;
+}
+.search-sousuo .xuanze{
+	position: absolute;
+	right:5px;
+	top:25px;
+	background-image: url(../img/gx-search_05.png);
+	/*background-position: 10px 10px;*/
+	background-size: 35px;
+	background-repeat: no-repeat;
+	width: .7rem;
+	height: .62rem;
+	/*background: red;*/
+}
+
+
+/*下拉*/
+.xiala{
+	width:4.5rem;
+	height: 120px;
+	position:absolute;
+	left: 70px;
+	top: 109px;
+	z-index: 3;
+	float: left;
+	overflow: hidden;
+	background: white;
+	border: 1px solid #eee;
+	z-index: 110;
+	background: #F6F6F6;
+	display: none;
+}
+
+.xiala li{
+	width: 80%;
+	height: .4rem;
+	margin: 0 auto;
+	box-sizing: border-box;
+	border-bottom: 1px dashed #AAAAAA;
+	font-size: 16px;
+	font-family: "苹方";
+	padding-left: .3rem;
+}
+
+.search-list{
+	width:100%;
+	height:1.7rem;
+	position: absolute;
+	top: 2.4rem;
+	float: left;
+	z-index: 100;
+}
+.search-list ul:first-child{
+	width: 100%;
+	height: .75rem;
+	float: left;
+	/*margin-top: .1rem;*/
+}
+/*.search-list ul:last-child{
+	width: 100%;
+	height: .75rem;
+	float: left;
+	position: absolute;
+	left: 75px;
+	top: 40px;
+	overflow: hidden;
+	/*margin-top: .1rem;
+}*/
+.search-list ul li{
+	width: 20%;
+	height: 100%;
+	float: left;
+	background-image: url(../img/gx-search_12.png);
+	background-position: 6px 6px;
+	background-repeat: no-repeat;
+	background-size: 1.2rem;
+	z-index: 99;
+}
+.search-list ul li p{
+	color: white;
+	font-size: 16px;
+	margin-top: 9px;
+	margin-left: 19px;
+}
+
+/*轮播*/
+.swiper-container{
+	width: 100%;
+	height: 2.87rem;
+	/*position: absolute;*/
+	margin-top:1.6rem;
+}
+.swiper-slide{
+	width: 70%;
+	height: auto;
+	margin: 0 auto;
+}
+/*推荐*/
+.search-tuijian{
+	width: 100%;
+	height:0.88rem;
+	margin-top:0.4rem;
+	/*top: 8.2rem;*/
+	background-image:url(../img/gx-search_16.png) ;
+	background-repeat: no-repeat;
+	background-position: 10px 0px;
+	background-size:4.8rem 100%;
+}
+.search-tuijian div{
+	margin-right: 10px;
+}
+.search-tuijian span{
+	display: block;
+	float: right;
+	font-size: 14px;
+	font-family: "宋体";
+	margin-top: 14px;
+	margin-right: 5px;
+}
+.search-tuijian p{
+	display: block;
+	float: right;
+	font-size: 14px;
+	font-family: "苹方";
+	margin-top: 12px;
+	margin-right: 5px;
+}
+
+/*查看*/
+.search-look{
+	width: 100%;
+	height:auto;
+	/*position: absolute;*/
+	/*top: 1.4rem;*/
+	/*margin-top:0.4rem;*/
+	display: block;
+	/*float: left;*/
+/*	background: white;*/
+	overflow: hidden;
+}
+.search-look li:first-child{
+	background-image: url(../img/gx-search_19.png);
+	background-repeat: no-repeat;
+	background-position: 10px 10px;
+	background-size: 3.7rem;
+	width: 48%;
+	height:2rem;
+	display: block;
+	float: left;
+	position: relative;
+	/*margin-bottom: .5rem;*/
+}
+.search-look li:last-child{
+	background-image: url(../img/gx-search_20.png);
+	background-repeat: no-repeat;
+	background-position: 10px 14px;
+	background-size: 3.5rem;
+	width: 48%;
+	height: 2rem;
+	display: block;
+	position: relative;
+	float: left;
+}
+.search-look li span{
+	width: 70px;
+	height: 20px;
+	position: absolute;
+	top: 77px;
+	background: #F8F7B4;
+	border-radius:5px;
+	text-align: center;
+	line-height: 20px;
+}
+.search-look li:first-child span{
+	left: 34px;
+}
+.search-look li:last-child span{
+	right: 90px;
+}
+
+/*设计师*/
+.search-master{
+	width: 100%;
+	height: 6rem;
+	margin-top:0.2rem;
+	/*position: absolute;*/
+	/*top: 12rem;*/
+	background-image:url(../img/gx-search_23.png) ;
+	background-repeat: no-repeat;
+	background-position: 10px 0px;
+	background-size:2.4rem;
+	display: block;
+}
+.search-master li:first-child{
+	background-image: url(../img/gx-search_29.png);
+	background-repeat: no-repeat;
+	background-position: 10px 46px;
+	background-size: 7rem;
+	width:100%;
+	height:2.5rem;
+	display: block;
+	position: relative;
+}
+.search-master li:last-child{
+	background-image: url(../img/gx-search_29.png);
+	background-repeat: no-repeat;
+	background-position: 10px 10px;
+	background-size: 7rem;
+	width: 100%;
+	height: 2.5rem;
+	display: block;
+	position: relative;
+}
+.search-master .touxiang{
+	background-image: url(../img/gx-search_26.png);
+	background-repeat: no-repeat;
+	background-position: 10px 5px;
+	width: 50%;
+	height: .2rem;
+}
+.search-master li .touxiang{
+	width: .8rem;
+	height: .8rem;
+	position: absolute;
+	left: 17px;
+	border-radius: 50%;
+	box-sizing: border-box;
+	border: 1px solid #AF9D4D;
+	box-shadow:1px 1px 1px rgba(0,0,0,.2);
+}
+.search-master li .m1{
+	font-size: 12px;
+	position: absolute;
+	left: 19px;
+	font-family:"San Francisco Display Bold" ;
+}
+.search-master li:first-child .touxiang{
+	top: 58px;
+	background-image: url(../img/f859ded9b41f5c57.jpg);
+	background-position: 0px 0px;
+	background-size: 40px;
+	overflow: hidden;
+}
+.search-master li:first-child p{
+	top: 102px;
+}
+.search-master li:last-child .touxiang{
+	top: 22px;
+	background-image: url(../img/f859ded9b41f5c57.jpg);
+	background-position: 0px 0px;
+	background-size: 40px;
+	overflow: hidden;
+}
+.search-master li:last-child p{
+	top: 66px;
+	left: 21px;
+}
+.search-master li .m2{
+	font-size: 10px;
+	font-weight: bold;
+	font-family:"San Francisco Display Bold" ;
+	position: absolute;
+	top: 55px;
+	left: 71px;
+	color: #5C5C5C;
+}
+.search-master li .m3{
+	font-size: 10px;
+	font-family:"San Francisco Display Bold" ;
+	position: absolute;
+	top: 55px;
+	left: 123px;
+	color: #5C5C5C;
+}
+.search-master li .m4{
+	font-size: 10px;
+	font-family:"San Francisco Display Bold" ;
+	position: absolute;
+	top: 55px;
+	left: 138px;
+	color: #FE7A6D;
+}
+.search-master li .huo1{
+	display: block;
+	width: 55px;
+	height: 14px;
+	position: absolute;
+	right:122px;
+	top: 58px;
+	background-image: url(../img/gx-search_31.png);
+	background-size: 14px;
+}
+.search-master li .huo2{
+	display: block;
+	width: 14px;
+	height: 14px;
+	position: absolute;
+	right:108px;
+	top: 58px;
+	background-image: url(../img/gx-search_33.png);
+	background-size: 14px;
+}
+.search-master li .m5{
+	font-size: 10px;
+	font-family:"苹方" ;
+	position: absolute;
+	top: 74px;
+	left: 71px;
+	color: #6E6E6E;
+}
+.search-master li .m6{
+	font-size: 10px;
+	font-family:"San Francisco Display Bold" ;
+	position: absolute;
+	top: 88px;
+	left: 71px;
+	color: #ACACAC;
+}
+.search-master li .yuan1{
+	width: 10px;
+	height: 10px;
+	background: #21FFB8;
+	border-radius: 50%;
+	position: absolute;
+	bottom: 10px;
+	left: 72px;
+}
+.search-master li .m7{
+	font-size: 10px;
+	font-family:"San Francisco Display Bold" ;
+	position: absolute;
+	bottom: 10px;
+	left: 84px;
+	color: #7CB7FA;
+}
+.search-master li .m8{
+	font-size: 10px;
+	font-family:"苹方" ;
+	position: absolute;
+	bottom: 10px;
+	left: 118px;
+	color: #6E6E6E;
+}
+.search-master li .yuan2{
+	width: 10px;
+	height: 10px;
+	background: #2189FF;
+	border-radius: 50%;
+	position: absolute;
+	bottom: 10px;
+	right:143px;
+}
+.search-master li .m9{
+	font-size: 10px;
+	font-family:"San Francisco Display Bold" ;
+	position: absolute;
+	bottom: 8px;
+	right: 100px;
+	color: #7CB7FA;
+}
+.search-master li .m10{
+	font-size: 10px;
+	font-family:"苹方" ;
+	position: absolute;
+	bottom: 8px;
+	right:  47px;
+	color: #6E6E6E;
+}
+.search-master li .dong{
+	position: absolute;
+	left: 0px;
+	top: -36px;
+	width: 100%;
+	height: 100%;
+}
+/*底部固定定位*/
+.che-don{
+	width: 100%;
+	height: .94rem;
+	background: #323840;
+	position: absolute;
+	bottom: 0;
+	left:0;
+}
+.che-don >ul{
+	width: 100%;
+	height: .94rem;
+	display: flex;
+}
+.che-don> ul> li {
+	display: block;
+	text-align: center;
+	height: 100%;
+	width: 21%;
+}
+.che-don >ul >li>a{
+	display: block;
+	width:.88rem;
+	height: .95rem;
+	margin: 0 auto
+}
+.che-don >ul >li:nth-child(1)>a{
+	background: url(../img/gx-fix_03.png);
+	background-size: 100%;
+}
+.che-don >ul >li:nth-child(2)>a{
+	background: url(../img/gx-fix_78.png);
+	background-size: 100%;
+}
+.che-don >ul >li:nth-child(3)>a{
+	background: url(../img/gx-fix_80.png);
+	background-size: 100%;
+}
+.che-don >ul >li:nth-child(4)>a{
+	background: url(../img/home_09.png);
+	background-size: 104%;
+	background-position: 0px -3px;
+	
+}
+.che-don >ul >li:nth-child(5)>a{
+	background: url(../img/gx-fix_85.png);
+	background-size: 100%;
+}
