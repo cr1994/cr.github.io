@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>扫雷</title>	
+	</head>
+	<script>
+	// rem
+	(function (doc, win) { 
+		var de = doc.documentElement, re = 'orientationchange' in window ? 'orientationchange' : 'resize', recalc = function () {var cw = de.clientWidth; 
+			if (!cw) return;
+			 de.style.fontSize = cw>=750 ? '100px' : 100 * (cw / 750) + 'px'; };
+			 recalc(); 
+			 if (!doc.addEventListener) return; 
+			 win.addEventListener(re, recalc, false); doc.addEventListener('DOMContentLoaded', recalc, false); }
+	)(document, window);
+	</script>
+	<style>
+		body{text-align:center;}
+		body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,form,input,button,textarea,p,th,td,img {margin:0px;padding:0px;list-style: none;}
+		#app{width:7.1rem;height:12.78rem;border-bottom:0.01rem solid #000;border-right:0.01rem solid #000;margin:.5rem auto;}
+		#app li{float:left;width:.7rem;height:.7rem;border:.01rem solid #000;border-right:none;border-bottom:none;background:#eee;font-size:.5rem;text-align: center;line-height: .7rem;}
+		#app li.gold{background:#000;}
+		#app li.white{background:#fff;}
+	</style>
+	<body>
+		<div>
+			<ul id="app"></ul>
+		</div>
+	</body>
+	<script type="text/javascript" src="./jQuery.js"></script>
+	<script type="text/javascript" src="./index.js"></script>
+</html>
